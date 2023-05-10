@@ -1,0 +1,15 @@
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\bin\Debug\net6.0\Contracts.deps.json
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\bin\Debug\net6.0\Contracts.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\bin\Debug\net6.0\Contracts.pdb
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\bin\Debug\net6.0\Entity.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\bin\Debug\net6.0\Entity.pdb
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfo.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.csproj.CopyComplete
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\refint\Contracts.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\Contracts.pdb
+C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\obj\Debug\net6.0\ref\Contracts.dll
