@@ -1,5 +1,5 @@
 using Xunit;
-namespace UnitTesting
+namespace Testing
 {
   public class UserTesting
   {

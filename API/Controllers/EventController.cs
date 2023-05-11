@@ -4,19 +4,21 @@ using Entity.Data;
 using Entity.Dtos;
 using System.ComponentModel.DataAnnotations;
 using Swashbuckle.AspNetCore.Annotations;
+using NLog;
 namespace Controller
 {
-  [Route("api/Event")]
+  [Route("api/Events")]
   public class EventController : ControllerBase
   {
     private readonly IConfiguration _config;
     private readonly IEventService _eventService;
-    private readonly ILogger<EventController> _logger;
-    public EventController(IConfiguration config, IEventService eventService, ILogger<EventController> logger)
+    private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
+    // private readonly ILogger<EventController> _logger;
+    public EventController(IConfiguration config, IEventService eventService /*ILogger<EventController> logger*/)
     {
       _config = config;
       _eventService = eventService;
-      _logger = logger;
+      // _logger = logger;
     }
 
     [HttpPost]
@@ -30,9 +32,13 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult CreateEvent([FromBody] EventDto eventDto)
     {
-      _logger.LogInformation("Started creating an event with event name {0}", eventDto.EventName);
+      if (!ModelState.IsValid)
+      {
+        throw new CustomException(400, "Bad Request", "Invalid data format");
+      }
+      _logger.Info("Started creating an event with event name {0}", eventDto.EventName);
       IdDto eventId = _eventService.CreateEvent(eventDto);
-      _logger.LogInformation("Successfully created an event with Id {0}", eventId.Id);
+      _logger.Info("Successfully created an event with Id {0}", eventId.Id);
       return Ok(eventId);
     }
 
@@ -45,18 +51,17 @@ namespace Controller
     [SwaggerResponse(200, "Successfully fetched events", typeof(EventDto))]
     [SwaggerResponse(400, "Bad request", typeof(CustomException))]
     [SwaggerResponse(500, "Internal Server Error")]
-    public IActionResult GetEvents([FromRoute(Name = "event-key"), Required] string eventKey)
+    public IActionResult GetEvents([FromRoute(Name = "event-key"), Required] string eventKey, [FromQuery(Name = "start-index")] int startIndex = 0, [FromQuery(Name = "row-size")] int rowSize = 5)
     {
-      _logger.LogInformation("Getting list of events for {0} key", eventKey);
+      _logger.Info("Getting list of events for {0} key", eventKey);
 
-      List<EventDto> eventDtos = _eventService.GetEvents(eventKey);
+      List<EventIdDto> eventIdDtos = _eventService.GetEvents(eventKey, startIndex, rowSize);
 
-      _logger.LogInformation("Successfully fetched the list of event {0}", eventDtos);
-      return Ok(eventDtos);
+      _logger.Info("Successfully fetched the list of event {0}", eventIdDtos);
+      return Ok(eventIdDtos);
     }
 
-
-    [HttpPost("{event-id}/user")]
+    [HttpPost("{event-id}/users")]
     ///<summary>
     ///To map the list of attendees to the event
     ///</summary>
@@ -71,12 +76,32 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error", typeof(CustomException))]
     public IActionResult CreateAttendee([FromRoute(Name = "event-id"), Required] Guid eventId, [FromForm(Name = "File"), Required] IFormFile file)
     {
-      _logger.LogInformation("Started mapping user {0} details to event id {1}", file, eventId);
+      _logger.Info("Started mapping user {0} details to event id {1}", file, eventId);
 
-      List<UserDto>? conflictedUsers = _eventService.CreateAttendee(eventId, file);
+      List<UserDto> conflictedUsers = _eventService.CreateAttendee(eventId, file);
 
-      _logger.LogInformation("Successfully mapped {0} to eventId {1} and returns conflicted users {2}", file, eventId, conflictedUsers);
-      return Conflict(conflictedUsers);
+      _logger.Info("Successfully mapped {0} to eventId {1} and returns conflicted users {2}", file, eventId, conflictedUsers);
+      if (conflictedUsers.Count != 0)
+      {
+        return Conflict(conflictedUsers);
+      }
+      return Ok();
     }
+
+    [HttpGet("{event-id}/users")]
+    ///<summary>
+    ///To get all the users mapped to the particular event
+    ///</summary>
+    ///<param name="event-id">Id of the event to get the users mapped</param>
+    ///<result>List of all the users mapped to the event-id</result>
+    [SwaggerResponse(200, "Successfully Fetched all users", typeof(UserDto))]
+    [SwaggerResponse(500, "Internal Server Error")]
+    public IActionResult GetUsersForEvent([FromRoute(Name = "event-id"), Required] Guid eventId)
+    {
+      List<UserDto> users = _eventService.GetUsersForEvent(eventId);
+      return Ok(users);
+
+    }
+
   }
 }

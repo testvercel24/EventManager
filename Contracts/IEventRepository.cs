@@ -20,7 +20,23 @@ namespace Repository
     ///<result name=List<EventDto>>
     ///Returns the list of all the events with eventName,startDateTime,endDateTime
     ///</result>
-    List<EventDto> GetEvents();
+    List<EventModel> GetAllEvents(int startIndex, int rowSize);
+
+    ///<summary>
+    ///To get all the past events that have been completed or started
+    ///</summary>
+    ///<param name=startIndex>To get the events from startIndex for pagination</param>
+    ///<param name=rowSize>To get the required number of rows for pagination</param>
+    ///<result name=List<EventModel>Returns the list of all the completed event details</result>
+    List<EventModel> GetPastEvents(int startIndex, int rowSize);
+
+    ///<summary>
+    ///To get all the upcoming events that have been completed or started
+    ///</summary>
+    ///<param name=startIndex>To get the events from startIndex for pagination</param>
+    ///<param name=rowSize>To get the required number of rows for pagination</param>
+    ///<result name=List<EventModel>Returns the list of all the upcoming event details</result>
+    List<EventModel> GetUpComingEvents(int startIndex, int rowSize);
 
     ///<summary>
     ///To Map the event ettendees with userIds and eventIds
@@ -42,7 +58,14 @@ namespace Repository
     ///<param name=startDateTime>starting date time of the event</param>
     ///<param name=endDateTime> ending date time of the event</param>
     ///<result name=List<UserDto>>returns the list of conflicted user details</result>
-    List<UserDto>? GetConflictedUsers(DateTime startDateTime, DateTime endDateTime);
+    List<UserDto> GetConflictedUsers(DateTime startDateTime, DateTime endDateTime);
+
+    //<summary>
+    ///To get all the event details associated for the userId
+    ///</summary>
+    ///<param name=userId>Id of the user to get all the events associated with</param>
+    ///<result name=List<EventDto>>Return list of all the event details associated with userId</result>
+    List<EventIdDto> GetEventsForUser(int userId);
 
   }
 }

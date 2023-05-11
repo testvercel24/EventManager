@@ -10,8 +10,8 @@ using Repository;
 using Services;
 using Microsoft.EntityFrameworkCore.InMemory;
 using AutoMapper;
-
-namespace UnitTesting
+using Moq;
+namespace Testing
 {
   public class BaseTesting
   {
@@ -62,11 +62,14 @@ namespace UnitTesting
       });
       _context.SaveChanges();
       _logger = _loggerFactory.CreateLogger(typeof(UserRepository));
+      // var mockLogger = new Mock<ILogger<UserRepository>>();
+      // var service = new YourService(mockLogger.Object);
+
       _userRepository = new UserRepository(_context, (ILogger<UserRepository>)_logger);
       _eventRepository = new EventRepository(_context);
-      _userService = new UserService(_userRepository, (ILogger<UserService>)_logger);
-      _eventService = new EventService(_eventRepository, _userService, _mapper, (ILogger<EventService>)_logger);
-      _eventController = new EventController(_config, _eventService, (ILogger<EventController>)_logger);
+      _userService = new UserService(_userRepository, _eventRepository, (ILogger<UserService>)_logger, _mapper);
+      _eventService = new EventService(_eventRepository, _userService, _userRepository, _mapper, (ILogger<EventService>)_logger);
+      _eventController = new EventController(_config, _eventService/*, (ILogger<EventController>)_logger*/);
       _userController = new UserController(_config, _userService, (ILogger<UserController>)_logger);
     }
   }

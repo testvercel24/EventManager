@@ -1,15 +1,12 @@
 using Xunit;
-using UnitTesting;
 using Entity.Dtos;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 
-namespace UnitTesting
+namespace Testing
 {
   public class EventTesting : BaseTesting
   {
-    //[Theory]
-    //[InlineData("Integration Session", "2023-05-10T11:00:00Z", "2023-05-10T11:30:00Z")]
     [Fact]
     public void CreateEventTesting()
     {

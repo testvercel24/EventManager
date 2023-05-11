@@ -20,7 +20,7 @@ namespace Services
     ///<result name=List<EventDto>>
     ///Returns the list of EventDto details such as eventName,startDateTime,endDateTime
     ///</result>
-    List<EventDto> GetEvents(string eventKey);
+    List<EventIdDto> GetEvents(string eventKey, int startIndex, int rowSize);
 
 
     ///<summary>
@@ -29,6 +29,13 @@ namespace Services
     ///<param name=Guid>Id of event for which the attendees should be mapped</param>
     ///<param name=File>List of details of the attendees to be mapped</param>
     ///</result name=UserDto>Return the list of conflicted users</result>
-    List<UserDto>? CreateAttendee(Guid eventId, IFormFile file);
+    List<UserDto> CreateAttendee(Guid eventId, IFormFile file);
+
+    ///<summary>
+    ///To get all the users mapped to the particular event
+    ///</summary>
+    ///<param name=eventId>Id of the event to get the users mapped</param>
+    ///<result name=List<UserDto>>Returns list of all the users mapped to the event-id</result>
+    List<UserDto> GetUsersForEvent(Guid eventId);
   }
 }

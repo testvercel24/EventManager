@@ -14,20 +14,25 @@ namespace Services
   {
     private readonly IEventRepository _eventRepository;
     private readonly IUserService _userService;
+    private readonly IUserRepository _userRepository;
     private readonly IMapper _mapper;
     private readonly ILogger<EventService> _logger;
-    public EventService(IEventRepository eventRepository, IUserService userService, IMapper mapper, ILogger<EventService> logger)
+    public EventService(IEventRepository eventRepository, IUserService userService,
+                        IUserRepository userRepository, IMapper mapper, ILogger<EventService> logger)
     {
       _eventRepository = eventRepository;
       _userService = userService;
       _mapper = mapper;
       _logger = logger;
+      _userRepository = userRepository;
     }
 
     ///<summary>
     ///To create a event and map all the event details to entity eventmodel
     ///</summary>
-    ///<param name=EventDto> Contains all the details of the event like eventName, startDateTime,endDateTime</param>
+    ///<param name=EventDto>
+    ///Contains all the details of the event like eventName, startDateTime,endDateTime
+    ///</param>
     ///<result name=IdDto> Return the Id of the event after succesful creatio of event</result>
     public IdDto CreateEvent(EventDto eventDto)
     {
@@ -43,15 +48,7 @@ namespace Services
         throw new CustomException(400, "Bad Request", "Event cannot be started in past");
       }
       _logger.LogDebug("Mapping event dto {0} to event model", eventDto);
-      EventModel eventModel = new EventModel()
-      {
-        Id = Guid.NewGuid(),
-        EventName = eventDto.EventName,
-        StartDateTime = eventDto.StartDateTime,
-        EndDateTime = eventDto.EndDateTime,
-        CreatedDate = DateTime.Now,
-        IsActive = true
-      };
+      EventModel eventModel = _mapper.Map<EventModel>(eventDto);
       _logger.LogDebug("Uploading the {0} details to database", eventModel);
       bool createdEvent = _eventRepository.CreateEvent(eventModel);
       if (createdEvent == false)
@@ -73,26 +70,29 @@ namespace Services
     ///<result name=List<EventDto>>
     ///Returns the list of EventDto details such as eventName,startDateTime,endDateTime
     ///</result>
-    public List<EventDto> GetEvents(string eventKey)
+    public List<EventIdDto> GetEvents(string eventKey, int startIndex, int rowSize)
     {
       _logger.LogInformation("Getting events for the key {0}", eventKey);
-      List<EventDto> allEvents = _eventRepository.GetEvents();
       if (eventKey.ToLower() == "all")
       {
-        _logger.LogInformation("Succesfully fetched all the ecvnts for {0} returning {1}", eventKey, allEvents);
-        return allEvents;
+        List<EventModel> eventModels = _eventRepository.GetAllEvents(startIndex, rowSize);
+        List<EventIdDto> events = _mapper.Map<List<EventIdDto>>(eventModels);
+        _logger.LogInformation("Succesfully fetched all the ecvnts for {0} returning {1}", eventKey, events);
+        return events;
       }
       else if (eventKey.ToLower() == "past")
       {
-        List<EventDto> pastEvents = allEvents.Where(x => x.EndDateTime <= DateTime.Now).ToList();
-        _logger.LogInformation("Successfully fetched all the events for {0} returning {1}", eventKey, pastEvents);
-        return pastEvents;
+        List<EventModel> eventModels = _eventRepository.GetPastEvents(startIndex, rowSize);
+        List<EventIdDto> events = _mapper.Map<List<EventIdDto>>(eventModels);
+        _logger.LogInformation("Successfully fetched all the events for {0} returning {1}", eventKey, events);
+        return events;
       }
       else if (eventKey.ToLower() == "upcoming")
       {
-        List<EventDto> upcomingEvents = allEvents.Where(x => x.StartDateTime >= DateTime.Now).ToList();
-        _logger.LogInformation("Successfully fetched all the events for {0} returning {1}", eventKey, upcomingEvents);
-        return upcomingEvents;
+        List<EventModel> eventModels = _eventRepository.GetUpComingEvents(startIndex, rowSize);
+        List<EventIdDto> events = _mapper.Map<List<EventIdDto>>(eventModels);
+        _logger.LogInformation("Successfully fetched all the events for {0} returning {1}", eventKey, events);
+        return events;
       }
       else
       {
@@ -107,43 +107,55 @@ namespace Services
     ///<param name=Guid>Id of event for which the attendees should be mapped</param>
     ///<param name=File>List of details of the attendees to be mapped</param>
     ///</result name=UserDto>Return the list of conflicted users</result>
-    public List<UserDto>? CreateAttendee(Guid eventId, IFormFile file)
+    public List<UserDto> CreateAttendee(Guid eventId, IFormFile file)
     {
       _logger.LogInformation("Sarted mapping {0} to event with id {1}", file, eventId);
+
       _userService.UploadUser(file);
+
       _logger.LogDebug("Getting event detaild for id {0}", eventId);
+
       EventModel? eventModel = _eventRepository.GetEventById(eventId);
       if (eventModel == null || eventModel.IsActive == false)
       {
         _logger.LogError("Event with id {0} is not found", eventId);
         throw new CustomException(404, "Not Found", "Event not found");
       }
+
       _logger.LogDebug("Getting the list of conflicted user for the datetime");
-      List<UserDto>? conflictedUsers = _eventRepository.GetConflictedUsers(eventModel.StartDateTime, eventModel.EndDateTime);
-      if (conflictedUsers != null)
+      List<UserDto> conflictedUsers = _eventRepository.GetConflictedUsers(eventModel.StartDateTime, eventModel.EndDateTime);
+      //Getting list of conflicted user ids
+      List<int> conflictedUserIds = conflictedUsers.Select(x => x.UserId).ToList();
+      using (var reader = new StreamReader(file.OpenReadStream()))
+      using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
       {
-        //Getting list of conflicted user ids
-        List<int> conflictedUserIds = conflictedUsers.Select(x => x.UserId).ToList();
-        using (var reader = new StreamReader(file.OpenReadStream()))
-        using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+        var users = csv.GetRecords<UserDto>().Where(x => conflictedUserIds.Contains(x.UserId) == false);
+        //mapping configuration for mapping userId to the EventAttendeeModel
+        var config = new MapperConfiguration(cfg =>
         {
-          var users = csv.GetRecords<UserDto>().Where(x => conflictedUserIds.Contains(x.UserId) == false);
-          //mapping configuration for mapping userId to the EventAttendeeModel
-          var config = new MapperConfiguration(cfg =>
-          {
-            cfg.CreateMap<int, EventAttendeeModel>()
-            .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src))
-            .ForMember(dest => dest.EventId, opt => opt.Ignore());
-          });
-          var mapper = new Mapper(config);
-          List<EventAttendeeModel> eventAttendees = mapper.Map<List<int>, List<EventAttendeeModel>>(users.Select(x => x.UserId).ToList());
-          eventAttendees.ForEach(x => x.EventId = eventId);
-          _logger.LogDebug("Uploading eventAttendeeModel details {0} to eventAttendee table", eventAttendees);
-          _eventRepository.CreateAttendee(eventAttendees);
-        }
+          cfg.CreateMap<int, EventAttendeeModel>()
+          .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src))
+          .ForMember(dest => dest.EventId, opt => opt.Ignore());
+        });
+        var mapper = new Mapper(config);
+        List<EventAttendeeModel> eventAttendees = mapper.Map<List<int>, List<EventAttendeeModel>>(users.Select(x => x.UserId).ToList());
+        eventAttendees.ForEach(x => x.EventId = eventId);
+        _logger.LogDebug("Uploading eventAttendeeModel details {0} to eventAttendee table", eventAttendees);
+        _eventRepository.CreateAttendee(eventAttendees);
       }
       _logger.LogInformation("Successfully mapped the users {0} to event {1}", file, eventId);
       return conflictedUsers;
+    }
+
+    ///<summary>
+    ///To get all the users mapped to the particular event
+    ///</summary>
+    ///<param name=eventId>Id of the event to get the users mapped</param>
+    ///<result name=List<UserDto>>Returns list of all the users mapped to the event-id</result>
+    public List<UserDto> GetUsersForEvent(Guid eventId)
+    {
+      List<UserDto> users = _userRepository.GetUsersForEvent(eventId);
+      return users;
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j0KxSgbG9gretpbFP9w+qPSKI+9Nt4QxRtAslgH9cVbUnedOlMj4jx9ymPTtYOzq9vlLCPwv8xEaFpkfbpuuBQ==",
+  "dgSpecHash": "jxHuy2vprd5HmXWerGaikjXa71I/zvSNxxOOj1V38K3EhqFVzlLpeei6Rh/PbL3y9VIi56/4f20ZdRdbnqekiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -87,6 +87,7 @@
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\VishnuPadiga\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.4\\npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

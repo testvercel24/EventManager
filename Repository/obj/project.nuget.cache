@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RkmZfMIz8H2NdQ4YzgX7cxcuw/XoC5JBgU5YU459DREukOLGsYQi///ec/3UE80YkT7x8TCf8KJFJZ7l2MmxQw==",
+  "dgSpecHash": "/a3108GVPK+JCpU9AO4GIxpJBp0Vz3bw4ThLFoQoVsodOr6eSgrYI66mvN7/iG8GMWn5k0G3+V1OgnorftjM6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\VishnuPadiga\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.4\\npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",

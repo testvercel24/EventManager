@@ -19,6 +19,7 @@ namespace API
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddControllers();
+
       services.AddEndpointsApiExplorer();
       services.AddSwaggerGen();
       services.AddLogging(loggingBuilder =>
@@ -27,13 +28,18 @@ namespace API
         loggingBuilder.AddDebug();
       });
 
-
       var mapperConfig = new MapperConfiguration(cfg =>
       {
         cfg.AddProfile(new AutoMapping());
       });
       IMapper mapper = mapperConfig.CreateMapper();
       services.AddSingleton(mapper);
+
+      var config = new MapperConfiguration(cfg =>
+      {
+        AutoMapping.Configure(cfg);
+      });
+      services.AddSingleton(config.CreateMapper());
 
       //Entity framework database connection
       services.AddEntityFrameworkNpgsql()
@@ -62,7 +68,6 @@ namespace API
           var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
           if (contextFeature != null)
           {
-            // Console.WriteLine($"Something went wrong:{contextFeature.Error}");
             context.Response.ContentType = "application/json";
             CustomException? baseException = (CustomException)contextFeature.Error;
             context.Response.StatusCode = baseException.Code;
