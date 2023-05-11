@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ECPLuclC+Egb9HLcqfKqrsAfv/pu0YSNDy0r8XqkwR6HvYoEahn6+IITNc4Huz7PmWbS8410woa85jNBGhVULQ==",
+  "dgSpecHash": "SdSBcha6oCkIyn9x+RI+4PoY6Hb/WjYNhxKv4ahK2kgfMORtE49yc+99dciwJJ5LAzosOzcnge3+K8EgJYQqkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj",
+  "projectFilePath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",

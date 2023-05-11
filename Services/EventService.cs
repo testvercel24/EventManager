@@ -152,6 +152,13 @@ namespace Services
     public List<UserDto> GetUsersForEvent(Guid eventId)
     {
       _logger.Info("Getting all the users for the evet with ID {0}", eventId);
+      //Getting event details
+      EventModel? eventModel = _eventRepository.GetEventById(eventId);
+      if (eventModel == null)
+      {
+        _logger.Error("No event found with the Id {0}", eventId);
+        throw new CustomException(404, "Not found", "Event not found");
+      }
 
       List<UserDto> users = _userRepository.GetUsersForEvent(eventId);
 

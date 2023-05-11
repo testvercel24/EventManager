@@ -99,6 +99,13 @@ namespace Services
     {
       _logger.Info("Getting all the events for the user with Id {0}", userId);
 
+      UserModel? userModel = _userRepository.GetUserById(userId);
+      if (userModel == null)
+      {
+        _logger.Error("No user details is found for Id {0}", userId);
+        throw new CustomException(404, "Not Found", "User not found");
+      }
+
       List<EventIdDto> events = _eventRepository.GetEventsForUser(userId);
 
       _logger.Info("Successfully fetched all the event details {0} for user with Id {1}", events, userId);
