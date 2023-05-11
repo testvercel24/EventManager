@@ -9081,11 +9081,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\API.csproj",
+      "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\API.csproj",
       "packagesPath": "C:\\Users\\VishnuPadiga\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\obj\\",
+      "outputPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VishnuPadiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -9100,8 +9100,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj": {
-              "projectPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj"
+            "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj"
             }
           }
         }

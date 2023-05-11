@@ -1194,11 +1194,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\VishnuPadiga\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VishnuPadiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1213,8 +1213,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj": {
-              "projectPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj"
+            "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj"
             }
           }
         }

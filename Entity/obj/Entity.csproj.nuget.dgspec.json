@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj": {}
+    "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj": {
+    "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\VishnuPadiga\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VishnuPadiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
