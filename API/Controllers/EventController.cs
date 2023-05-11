@@ -10,15 +10,11 @@ namespace Controller
   [Route("api/Events")]
   public class EventController : ControllerBase
   {
-    private readonly IConfiguration _config;
     private readonly IEventService _eventService;
     private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
-    // private readonly ILogger<EventController> _logger;
-    public EventController(IConfiguration config, IEventService eventService /*ILogger<EventController> logger*/)
+    public EventController(IEventService eventService)
     {
-      _config = config;
       _eventService = eventService;
-      // _logger = logger;
     }
 
     [HttpPost]
@@ -34,13 +30,18 @@ namespace Controller
     {
       if (!ModelState.IsValid)
       {
+        _logger.Error("Bad request invalid model state");
         throw new CustomException(400, "Bad Request", "Invalid data format");
       }
       _logger.Info("Started creating an event with event name {0}", eventDto.EventName);
+
       IdDto eventId = _eventService.CreateEvent(eventDto);
+
       _logger.Info("Successfully created an event with Id {0}", eventId.Id);
+
       return Ok(eventId);
     }
+
 
     [HttpGet("{event-key}")]
     ///<summary>
@@ -58,8 +59,10 @@ namespace Controller
       List<EventIdDto> eventIdDtos = _eventService.GetEvents(eventKey, startIndex, rowSize);
 
       _logger.Info("Successfully fetched the list of event {0}", eventIdDtos);
+
       return Ok(eventIdDtos);
     }
+
 
     [HttpPost("{event-id}/users")]
     ///<summary>
@@ -88,6 +91,7 @@ namespace Controller
       return Ok();
     }
 
+
     [HttpGet("{event-id}/users")]
     ///<summary>
     ///To get all the users mapped to the particular event
@@ -98,7 +102,12 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetUsersForEvent([FromRoute(Name = "event-id"), Required] Guid eventId)
     {
+      _logger.Info("Getting Users for the event with id {0}", eventId);
+
       List<UserDto> users = _eventService.GetUsersForEvent(eventId);
+
+      _logger.Info("Successfully fetched the users {0} for the event {1}", users, eventId);
+
       return Ok(users);
 
     }

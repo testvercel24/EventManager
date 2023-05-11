@@ -3,19 +3,17 @@ using Services;
 using Entity.Data;
 using Swashbuckle.AspNetCore.Annotations;
 using Entity.Dtos;
+using NLog;
 namespace Controller
 {
   [Route("api/users")]
   public class UserController : ControllerBase
   {
     private readonly IUserService _userService;
-    private readonly IConfiguration _config;
-    private readonly ILogger<UserController> _logger;
-    public UserController(IConfiguration config, IUserService userService, ILogger<UserController> logger)
+    private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
+    public UserController(IUserService userService)
     {
-      _config = config;
       _userService = userService;
-      _logger = logger;
     }
     [HttpPost]
     ///<summar>
@@ -28,18 +26,13 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult UploadUser([FromForm(Name = "File")] IFormFile file)
     {
-      _logger.LogInformation("Started uploding {0} details", file);
+      _logger.Info("Started uploding {0} details", file);
+
       bool upload = _userService.UploadUser(file);
-      if (upload == true)
-      {
-        _logger.LogInformation("Successfully uploaded the {0} details", file);
-        return Ok();
-      }
-      else
-      {
-        _logger.LogError("Internal server error is thrown");
-        throw new CustomException(500, "Internal Server Error", "Something went wrong");
-      }
+
+      _logger.Info("Successfully uploaded the {0} details", file);
+
+      return Ok();
     }
 
     [HttpGet]
@@ -53,9 +46,15 @@ namespace Controller
     [SwaggerResponse(500, "Internal server Error")]
     public IActionResult GetAllUsers([FromQuery(Name = "start-index")] int startIndex = 0, [FromQuery(Name = "row-size")] int rowSize = 5)
     {
+      _logger.Info("Getting all the active users from user repository");
+
       List<UserDto> users = _userService.GetAllUsers(startIndex, rowSize);
+
+      _logger.Info("Successfully fetched all the users {0}", users);
+
       return Ok(users);
     }
+
 
     [HttpGet("{user-id}")]
     ///<summary>
@@ -67,9 +66,15 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetUserById([FromRoute(Name = "user-id")] int userId)
     {
+      _logger.Info("Getting user details for Id {0}", userId);
+
       UserDto user = _userService.GetUserById(userId);
+
+      _logger.Info("Successfully fetched the user details {0} for Id {1}", user, userId);
+
       return Ok(user);
     }
+
 
     [HttpGet("{user-id}/events")]
     ///<summary>
@@ -81,7 +86,11 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetEventsForUser([FromRoute(Name = "user-id")] int userId)
     {
+      _logger.Info("Getting Events for the user with Id {0}", userId);
+
       List<EventIdDto> events = _userService.GetEventsForUser(userId);
+
+      _logger.Info("Successfully fetched the events {0} for user with Id {1}", events, userId);
       return Ok(events);
     }
   }

@@ -2,17 +2,17 @@ using Entity.Models;
 using Entity.Data;
 using Microsoft.Extensions.Logging;
 using Entity.Dtos;
+using NLog;
 namespace Repository
 {
 
   public class UserRepository : IUserRepository
   {
     private readonly ApiDbContext _context;
-    private readonly ILogger<UserRepository> _logger;
-    public UserRepository(ApiDbContext context, ILogger<UserRepository> logger)
+    private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
+    public UserRepository(ApiDbContext context)
     {
       _context = context;
-      _logger = logger;
     }
 
     ///<summary>
@@ -22,7 +22,8 @@ namespace Repository
     ///<result name=bool>Return true after uploadin the list of all the details of the users</result>
     public bool UploadUser(List<UserModel> users)
     {
-      _logger.LogInformation("Started uploading user details {0}", users);
+      _logger.Info("Started uploading user details {0}", users);
+
       List<UserModel> newUsers = (from user in users
                                   join userModel in _context.Users
                                   on user.UserId equals userModel.UserId into newTable
@@ -33,10 +34,12 @@ namespace Repository
                                     UserId = user.UserId,
                                     UserName = user.UserName
                                   }).ToList();
-      _logger.LogDebug("Fetched the new users {0} from the {1}", newUsers, users);
+      _logger.Debug("Fetched the new users {0} from the {1}", newUsers, users);
+
       _context.Users.AddRange(newUsers);
       _context.SaveChanges();
-      _logger.LogInformation("Successfully uploaded the {@users}", users);
+
+      _logger.Info("Successfully uploaded the {@users}", users);
       return true;
     }
 
@@ -59,7 +62,9 @@ namespace Repository
     ///<result name=UserModel>Returns all the details of the user repository with the given Id</result>
     public UserModel? GetUserById(int userId)
     {
+      _logger.Info("Getting user repository details for {0}", userId);
       UserModel? user = _context.Users.FirstOrDefault(u => u.UserId == userId);
+      _logger.Info("Successfully fetched user repository details {0}", user);
       return user;
     }
 
@@ -70,10 +75,12 @@ namespace Repository
     ///<result name=List<UserDto>>Returns all the user details associated with given eventId</result>
     public List<UserDto> GetUsersForEvent(Guid eventId)
     {
+      _logger.Info("Fetching all the users with event Id  {0}", eventId);
       var users = from eventAttendees in _context.EventAttendees.Where(x => x.EventId == eventId)
                   join user in _context.Users
                       on eventAttendees.UserId equals user.UserId
                   select new UserDto { UserId = user.UserId, UserName = user.UserName };
+      _logger.Info("Successfully fetched all the users for the event with Id {0}", eventId);
       return users.ToList();
     }
 

@@ -7,19 +7,19 @@ using Entity.Data;
 using Microsoft.Extensions.Logging;
 using Entity.Dtos;
 using AutoMapper;
+using NLog;
 namespace Services
 {
   public class UserService : IUserService
   {
     private readonly IUserRepository _userRepository;
-    private readonly ILogger<UserService> _logger;
+    private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
+
     private readonly IEventRepository _eventRepository;
-    // private readonly AutoMapping _autoMapping;
     private readonly IMapper _mapper;
-    public UserService(IUserRepository userRepository, IEventRepository eventRepository, ILogger<UserService> logger, IMapper mapper)
+    public UserService(IUserRepository userRepository, IEventRepository eventRepository, IMapper mapper)
     {
       _userRepository = userRepository;
-      _logger = logger;
       _mapper = mapper;
       _eventRepository = eventRepository;
     }
@@ -31,24 +31,24 @@ namespace Services
     ///<result name=bool>Returns true after succseful upload the details</result>
     public bool UploadUser(IFormFile file)
     {
-      _logger.LogInformation("Started uploading userIds and userNames from {0}", file);
+      _logger.Info("Started uploading userIds and userNames from {0}", file);
       try
       {
-        _logger.LogDebug("Assigning file {0} details to UserModel", file);
+        _logger.Debug("Assigning file {0} details to UserModel", file);
 
         using (var reader = new StreamReader(file.OpenReadStream()))
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
           var users = csv.GetRecords<UserModel>().ToList();
-          _logger.LogDebug("Uploding UserModel details {0}", users);
+          _logger.Debug("Uploding UserModel details {0}", users);
           bool upload = _userRepository.UploadUser(users);
-          _logger.LogInformation("Successfully uploaded details users {0}", users);
+          _logger.Info("Successfully uploaded details users {0}", users);
           return true;
         }
       }
       catch
       {
-        _logger.LogError("Invalid csv file bad request");
+        _logger.Error("Invalid csv file bad request");
         throw new CustomException(400, "Bad request", "Invalid Csv file format");
       }
     }
@@ -73,12 +73,20 @@ namespace Services
     ///<result name=UserDto>Returns all details of the user with userId</result>
     public UserDto GetUserById(int userId)
     {
+      _logger.Info("Getting user details for the Id {0}", userId);
+
       UserModel? userModel = _userRepository.GetUserById(userId);
       if (userModel == null)
       {
+        _logger.Error("No user details is found for Id {0}", userId);
         throw new CustomException(404, "Not Found", "User not found");
       }
+      _logger.Debug("Mapping user model details {0} to user dto", userModel);
+
       UserDto user = _mapper.Map<UserDto>(userModel);
+
+      _logger.Info("Successfully fetched user details {0} for user id {1}", user, userId);
+
       return user;
     }
 
@@ -89,7 +97,12 @@ namespace Services
     ///<result name=List<EventIdDto>Returns all the details of the events associated with userId</result>
     public List<EventIdDto> GetEventsForUser(int userId)
     {
+      _logger.Info("Getting all the events for the user with Id {0}", userId);
+
       List<EventIdDto> events = _eventRepository.GetEventsForUser(userId);
+
+      _logger.Info("Successfully fetched all the event details {0} for user with Id {1}", events, userId);
+
       return events;
     }
   }

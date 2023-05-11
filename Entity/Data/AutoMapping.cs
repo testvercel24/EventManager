@@ -31,6 +31,9 @@ namespace Entity.Data
         .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId))
           .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName));
       config.CreateMap<EventDto, EventModel>();
+      config.CreateMap<int, EventAttendeeModel>()
+         .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src))
+         .ForMember(dest => dest.EventId, opt => opt.Ignore());
     }
 
   }

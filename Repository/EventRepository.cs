@@ -1,11 +1,13 @@
 using Entity.Models;
 using Entity.Data;
 using Entity.Dtos;
+using NLog;
 namespace Repository
 {
   public class EventRepository : IEventRepository
   {
     private readonly ApiDbContext _context;
+    private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
     public EventRepository(ApiDbContext context)
     {
       _context = context;
@@ -20,8 +22,10 @@ namespace Repository
     ///<result name=bool>Return true after successfull uploading</result>
     public bool CreateEvent(EventModel eventModel)
     {
+      _logger.Info("Creating event with details {0} to repository", eventModel);
       _context.Events.Add(eventModel);
       _context.SaveChanges();
+      _logger.Info("Successfully added the event details to the event repository");
       return true;
     }
 
@@ -33,7 +37,9 @@ namespace Repository
     ///</result>
     public List<EventModel> GetAllEvents(int startIndex, int rowSize)
     {
+      _logger.Info("Fetching all the events in the repository");
       List<EventModel> events = _context.Events.Where(x => x.IsActive == true).Skip(startIndex).Take(rowSize).ToList();
+      _logger.Info("Successfully fetched all the events {0}", events);
       return events.ToList();
     }
 
@@ -46,7 +52,9 @@ namespace Repository
     ///<result name=List<EventModel>Returns the list of all the completed event details</result>
     public List<EventModel> GetPastEvents(int startIndex, int rowSize)
     {
+      _logger.Info("Fetching all the past events that are completed");
       List<EventModel> events = _context.Events.Where(x => x.IsActive == true && x.StartDateTime < DateTime.Now).Skip(startIndex).Take(rowSize).ToList();
+      _logger.Info("Successfully fetched all the past events");
       return events.ToList();
     }
 
@@ -58,7 +66,9 @@ namespace Repository
     ///<result name=List<EventModel>Returns the list of all the upcoming event details</result>
     public List<EventModel> GetUpComingEvents(int startIndex, int rowSize)
     {
+      _logger.Info("Fetching all the upcoming events in the repository");
       List<EventModel> events = _context.Events.Where(x => x.IsActive == true && x.StartDateTime > DateTime.Now).Skip(startIndex).Take(rowSize).ToList();
+      _logger.Info("Successfully fetched all the upcoming events from repository");
       return events.ToList();
     }
 
@@ -69,8 +79,10 @@ namespace Repository
     ///<result name=bool>Returns true if the Mapping details are added successfully</result>
     public bool CreateAttendee(List<EventAttendeeModel> eventAttendees)
     {
+      _logger.Info("Creating the event attendee model in repository");
       _context.AddRange(eventAttendees);
       _context.SaveChanges();
+      _logger.Info("Successfully add the event attendee model {0} details to repository", eventAttendees);
       return true;
     }
 
@@ -81,7 +93,10 @@ namespace Repository
     ///<result name=EventModel>Contains all the details eventName,startDateTime,endDateTime</result>
     public EventModel? GetEventById(Guid eventId)
     {
-      return _context.Events.FirstOrDefault(x => x.Id == eventId);
+      _logger.Info("Getting event details with id {0}", eventId);
+      EventModel? eventModel = _context.Events.FirstOrDefault(x => x.Id == eventId);
+      _logger.Info("Successfully fetched event details in repository");
+      return eventModel;
     }
 
     ///<summary>
@@ -90,8 +105,9 @@ namespace Repository
     ///<param name=startDateTime>starting date time of the event</param>
     ///<param name=endDateTime> ending date time of the event</param>
     ///<result name=List<UserDto>>returns the list of conflicted user details</result>
-    public List<UserDto> GetConflictedUsers(DateTime startDateTime, DateTime endDateTime)
+    public List<UserDto> GetConflictedUsers(DateTime startDateTime, DateTime endDateTime, List<UserDto> attendees)
     {
+      _logger.Info("Getting the conflicted users within the time range {0} and {1}", startDateTime, endDateTime);
       var users = from events in _context.Events.Where(x => (x.StartDateTime >= startDateTime && x.StartDateTime <= endDateTime)
                                                             || (x.EndDateTime >= startDateTime && x.EndDateTime <= endDateTime))
                   join eventAttendees in _context.EventAttendees
@@ -99,6 +115,7 @@ namespace Repository
                   join user in _context.Users
                       on eventAttendees.UserId equals user.UserId
                   select new UserDto { UserId = user.UserId, UserName = user.UserName };
+      _logger.Info("Successfully fetched all the conflicted users {0} for given time range", users);
       return users.ToList();
     }
 
@@ -109,10 +126,12 @@ namespace Repository
     ///<result name=List<EventDto>>Return list of all the event details associated with userId</result>
     public List<EventIdDto> GetEventsForUser(int userId)
     {
+      _logger.Info("Fetching all the events for the user with id {0}", userId);
       var events = from eventAttendees in _context.EventAttendees.Where(x => x.UserId == userId)
                    join e in _context.Events
                      on eventAttendees.EventId equals e.Id
                    select new EventIdDto { Id = e.Id, EventName = e.EventName, StartDateTime = e.StartDateTime, EndDateTime = e.EndDateTime };
+      _logger.Info("Successfully fetched all the event details for the user");
       return events.ToList();
     }
   }

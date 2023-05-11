@@ -58,7 +58,7 @@ namespace Repository
     ///<param name=startDateTime>starting date time of the event</param>
     ///<param name=endDateTime> ending date time of the event</param>
     ///<result name=List<UserDto>>returns the list of conflicted user details</result>
-    List<UserDto> GetConflictedUsers(DateTime startDateTime, DateTime endDateTime);
+    List<UserDto> GetConflictedUsers(DateTime startDateTime, DateTime endDateTime, List<UserDto> attendees);
 
     //<summary>
     ///To get all the event details associated for the userId

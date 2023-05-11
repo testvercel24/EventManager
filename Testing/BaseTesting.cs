@@ -10,13 +10,10 @@ using Repository;
 using Services;
 using Microsoft.EntityFrameworkCore.InMemory;
 using AutoMapper;
-using Moq;
 namespace Testing
 {
   public class BaseTesting
   {
-    public IConfiguration _config;
-    public ILogger _logger;
     public ApiDbContext _context;
     public Guid EventId = Guid.NewGuid();
     private readonly DbContextOptionsBuilder<ApiDbContext> optionsBuilder;
@@ -31,24 +28,26 @@ namespace Testing
     private readonly IMapper _mapper;
     public BaseTesting()
     {
-      _config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
       ServiceProvider serviceProvider = new ServiceCollection()
       .AddLogging()
       .BuildServiceProvider();
-
-      ILoggerFactory _loggerFactory = serviceProvider.GetService<ILoggerFactory>()!;
-      _logger = _loggerFactory.CreateLogger(typeof(EventController));
-
       _mapper = serviceProvider.GetService<IMapper>()!;
+      var mapperConfiguration = new MapperConfiguration(cfg =>
+      {
+        // Configure your mappings here
+        cfg.CreateMap<EventDto, EventModel>();
+        cfg.CreateMap<EventModel, EventIdDto>();
+        cfg.CreateMap<UserModel, UserDto>();
+        cfg.CreateMap<int, EventAttendeeModel>();
+      });
+      _mapper = mapperConfiguration.CreateMapper();
       optionsBuilder = new DbContextOptionsBuilder<ApiDbContext>()
             .UseInMemoryDatabase(databaseName: "testDb");
       var options = new DbContextOptionsBuilder<ApiDbContext>()
           .UseInMemoryDatabase(databaseName: "training-vishnu")
           .Options;
       _context = new ApiDbContext(optionsBuilder.Options);
-      _context.SaveChanges();
-
       _context.Users.AddRange(new UserModel[]
       {
         new UserModel{UserId=1,UserName="vishnu"},
@@ -58,19 +57,21 @@ namespace Testing
 
       _context.Events.AddRange(new EventModel[]
       {
-        new EventModel{Id=EventId,EventName="Integration Session",StartDateTime=new DateTime(2023,05,09,14,00,00),EndDateTime=new DateTime(2023,05,09,14,30,00)}
+        new EventModel{Id=EventId,EventName="Integration Session",StartDateTime=new DateTime(2023,05,14,14,00,00),EndDateTime=new DateTime(2023,05,14,14,30,00)}
       });
       _context.SaveChanges();
-      _logger = _loggerFactory.CreateLogger(typeof(UserRepository));
-      // var mockLogger = new Mock<ILogger<UserRepository>>();
-      // var service = new YourService(mockLogger.Object);
-
-      _userRepository = new UserRepository(_context, (ILogger<UserRepository>)_logger);
+      _context.EventAttendees.AddRange(new EventAttendeeModel[]
+      {
+        new EventAttendeeModel{UserId=1,EventId=EventId},
+        new EventAttendeeModel{UserId=2,EventId=EventId}
+      });
+      _context.SaveChanges();
+      _userRepository = new UserRepository(_context);
       _eventRepository = new EventRepository(_context);
-      _userService = new UserService(_userRepository, _eventRepository, (ILogger<UserService>)_logger, _mapper);
-      _eventService = new EventService(_eventRepository, _userService, _userRepository, _mapper, (ILogger<EventService>)_logger);
-      _eventController = new EventController(_config, _eventService/*, (ILogger<EventController>)_logger*/);
-      _userController = new UserController(_config, _userService, (ILogger<UserController>)_logger);
+      _userService = new UserService(_userRepository, _eventRepository, _mapper);
+      _eventService = new EventService(_eventRepository, _userService, _userRepository, _mapper);
+      _eventController = new EventController(_eventService);
+      _userController = new UserController(_userService);
     }
   }
 }
