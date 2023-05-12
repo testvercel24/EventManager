@@ -1,0 +1,14 @@
+﻿C:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\API.GlobalUsings.g.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\API.RazorAssemblyInfo.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\API\nlog.config
+C:\Users\VishnuPadiga\Desktop\EventManager\API\appsettings.Development.json
+C:\Users\VishnuPadiga\Desktop\EventManager\API\appsettings.json
+C:\Users\VishnuPadiga\Desktop\EventManager\API\Tenant_run-sonar-tests_1.bat
+C:\Users\VishnuPadiga\Desktop\EventManager\API\Properties\launchSettings.json

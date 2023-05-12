@@ -1,0 +1,28 @@
+
+Entity.Dtos.ErrorDto.ErrorDto()L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs ("0*¶
+0L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (ù
+ö
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (-	
+%0int"Entity.Dtos.ErrorDto.Code.set*
+Entity.Dtos.ErrorDto*
+""£
+†
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs
+ (8
+%1string" Entity.Dtos.ErrorDto.Message.set*
+Entity.Dtos.ErrorDto*
+""ß
+§
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (<
+%2string"$Entity.Dtos.ErrorDto.Description.set*
+Entity.Dtos.ErrorDto*
+"""c
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (
+implicit returnB
+Entity.Dtos.ErrorDto

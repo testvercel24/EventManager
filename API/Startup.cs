@@ -1,12 +1,11 @@
 using Services;
+using Controller;
+using AutoMapper;
 using Repository;
 using Entity.Dtos;
 using Entity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Diagnostics;
-using System.Text;
-using Controller;
-using AutoMapper;
 namespace API
 {
   public class Startup
@@ -77,7 +76,7 @@ namespace API
               Message = baseException.Messages,
               Description = baseException.Description
             }.ToString());
-            return;
+            // return;
           }
         });
       });

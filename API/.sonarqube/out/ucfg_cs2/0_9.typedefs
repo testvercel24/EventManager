@@ -1,0 +1,10 @@
+£
+Entity.Dtos.EventDtoobject-
+
+EventDto()Entity.Dtos.EventDto.EventDto()3
+EventName.get"Entity.Dtos.EventDto.EventName.get3
+EventName.set"Entity.Dtos.EventDto.EventName.set;
+StartDateTime.get&Entity.Dtos.EventDto.StartDateTime.get;
+StartDateTime.set&Entity.Dtos.EventDto.StartDateTime.set7
+EndDateTime.get$Entity.Dtos.EventDto.EndDateTime.get7
+EndDateTime.set$Entity.Dtos.EventDto.EndDateTime.set

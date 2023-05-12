@@ -1,0 +1,303 @@
+
+1Services.EventService.GetEvents(string, int, int)M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csI I(%"0*Ñ
+0M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csK L(%†
+ù
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csK K(
+%0NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Loggerœ
+Ã
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csK K(>
+
+%1void" NLog.Logger.Info(string, string)*
+
+%0NLog.Logger*" 
+Getting events for the key {0}*
+
+eventKeystringà
+Ö
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csL
+ L(
+%2string"string.ToLower()*
+
+eventKeystringß
+§
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csL
+ L(%
+
+%3bool""string.operator ==(string, string)*
+"
+string*
+
+%2string*
+all*
+1
+2*√
+1M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csN Q(…
+∆
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csN' N(7!
+%4Repository.IEventRepository"__id*L*J
+Services.EventService"/
+_eventRepositoryRepository.IEventRepository˝˙
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csN' N(Y(
+%5"System.Collections.Generic.List<T>"2Repository.IEventRepository.GetAllEvents(int, int)*#
+!
+%4Repository.IEventRepository*
+""*
+""2GetAllEvents(int, int)∑
+¥
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csN N(Y1
+eventModels"System.Collections.Generic.List<T>"__id**
+(
+%5"System.Collections.Generic.List<T>Æ
+´
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csO" O()
+%6AutoMapper.IMapper"__id*:*8
+Services.EventService"
+_mapperAutoMapper.IMapperöó
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csO" O(L(
+%7"System.Collections.Generic.List<T>"0AutoMapper.IMapperBase.Map<TDestination>(object)*
+
+%6AutoMapper.IMapper*3
+1
+eventModels"System.Collections.Generic.List<T>2Map<TDestination>(object)≤
+Ø
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csO O(L,
+events"System.Collections.Generic.List<T>"__id**
+(
+%7"System.Collections.Generic.List<T>†
+ù
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csP P(
+%8NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Logger¡
+æ
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csP P(b
+
+%9void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
+
+%8NLog.Logger*<:
+8Succesfully fetched all the ecvnts for {0} returning {1}*
+
+eventKeystring*.
+,
+events"System.Collections.Generic.List<T>"
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csQ Q(.
+,
+events"System.Collections.Generic.List<T>*ì
+2M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csS S(+â
+Ü
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csS S(!
+%10string"string.ToLower()*
+
+eventKeystring™
+ß
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csS S(+
+%11bool""string.operator ==(string, string)*
+"
+string*
+
+%10string*
+past*
+3
+4*—
+3M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csU X( 
+«
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csU' U(7"
+%12Repository.IEventRepository"__id*L*J
+Services.EventService"/
+_eventRepositoryRepository.IEventRepositoryÅ˛
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csU' U(Z)
+%13"System.Collections.Generic.List<T>"3Repository.IEventRepository.GetPastEvents(int, int)*$
+"
+%12Repository.IEventRepository*
+""*
+""2GetPastEvents(int, int)∏
+µ
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csU U(Z1
+eventModels"System.Collections.Generic.List<T>"__id*+
+)
+%13"System.Collections.Generic.List<T>Ø
+¨
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csV" V()
+%14AutoMapper.IMapper"__id*:*8
+Services.EventService"
+_mapperAutoMapper.IMapperúô
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csV" V(L)
+%15"System.Collections.Generic.List<T>"0AutoMapper.IMapperBase.Map<TDestination>(object)*
+
+%14AutoMapper.IMapper*3
+1
+eventModels"System.Collections.Generic.List<T>2Map<TDestination>(object)≥
+∞
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csV V(L,
+events"System.Collections.Generic.List<T>"__id*+
+)
+%15"System.Collections.Generic.List<T>°
+û
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csW W(
+%16NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Loggerƒ
+¡
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csW W(c
+%17void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
+
+%16NLog.Logger*=;
+9Successfully fetched all the events for {0} returning {1}*
+
+eventKeystring*.
+,
+events"System.Collections.Generic.List<T>"
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csX X(.
+,
+events"System.Collections.Generic.List<T>*ó
+4M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csZ Z(/â
+Ü
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csZ Z(!
+%18string"string.ToLower()*
+
+eventKeystringÆ
+´
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csZ Z(/
+%19bool""string.operator ==(string, string)*
+"
+string*
+
+%18string*
+
+upcoming*
+5
+6*Ÿ
+5M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs\ _( 
+«
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs\' \(7"
+%20Repository.IEventRepository"__id*L*J
+Services.EventService"/
+_eventRepositoryRepository.IEventRepositoryâÜ
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs\' \(^)
+%21"System.Collections.Generic.List<T>"7Repository.IEventRepository.GetUpComingEvents(int, int)*$
+"
+%20Repository.IEventRepository*
+""*
+""2GetUpComingEvents(int, int)∏
+µ
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs\ \(^1
+eventModels"System.Collections.Generic.List<T>"__id*+
+)
+%21"System.Collections.Generic.List<T>Ø
+¨
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs]" ]()
+%22AutoMapper.IMapper"__id*:*8
+Services.EventService"
+_mapperAutoMapper.IMapperúô
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs]" ](L)
+%23"System.Collections.Generic.List<T>"0AutoMapper.IMapperBase.Map<TDestination>(object)*
+
+%22AutoMapper.IMapper*3
+1
+eventModels"System.Collections.Generic.List<T>2Map<TDestination>(object)≥
+∞
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs] ](L,
+events"System.Collections.Generic.List<T>"__id*+
+)
+%23"System.Collections.Generic.List<T>°
+û
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs^ ^(
+%24NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Loggerƒ
+¡
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs^ ^(c
+%25void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
+
+%24NLog.Logger*=;
+9Successfully fetched all the events for {0} returning {1}*
+
+eventKeystring*.
+,
+events"System.Collections.Generic.List<T>"
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs_ _(.
+,
+events"System.Collections.Generic.List<T>*ﬂ
+6M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csc d(I°
+û
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csc c(
+%26NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Logger“
+œ
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csc c(A
+%27void"!NLog.Logger.Error(string, string)*
+
+%26NLog.Logger*" 
+Bad request key {0} is invalid*
+
+eventKeystringìê
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csd d(J"
+%28Entity.Data.CustomException"Entity.Data.CustomExceptionˆ
+Û
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csd d(!
+%29void"@Entity.Data.CustomException.CustomException(int, string, string)*$
+"
+%28Entity.Data.CustomException*2ê*
+Bad Request*
+Invalid event key*
+7*∏
+7M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csf f("d
+M
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csf f(
+implicit return:
+eventKeystring:
+
+startIndexint:
+rowSizeintB
+Services.EventService

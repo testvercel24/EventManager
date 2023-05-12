@@ -1,0 +1,11 @@
+å
+Entity.Data.ApiDbContext'Microsoft.EntityFrameworkCore.DbContextobjectÉ
+VApiDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Entity.Data.ApiDbContext>)oEntity.Data.ApiDbContext.ApiDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Entity.Data.ApiDbContext>)/
+	Users.get"Entity.Data.ApiDbContext.Users.get/
+	Users.set"Entity.Data.ApiDbContext.Users.set1
+
+Events.get#Entity.Data.ApiDbContext.Events.get1
+
+Events.set#Entity.Data.ApiDbContext.Events.setA
+EventAttendees.get+Entity.Data.ApiDbContext.EventAttendees.getA
+EventAttendees.set+Entity.Data.ApiDbContext.EventAttendees.set

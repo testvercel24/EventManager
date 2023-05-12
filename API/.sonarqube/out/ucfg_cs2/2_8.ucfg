@@ -1,0 +1,70 @@
+
+lRepository.EventRepository.CreateAttendee(System.Collections.Generic.List<Entity.Models.EventAttendeeModel>)R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csP P("0*¾
+0R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csR V(ª
+§
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csR R(
+%0NLog.Logger"__id*8*6
+Repository.EventRepository"
+_loggerNLog.LoggerÇ
+Ä
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csR R(E
+
+%1void"NLog.Logger.Info(string)*
+
+%0NLog.Logger*31
+/Creating the event attendee model in repositoryÅ
+Â
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csS S(
+%2Entity.Data.ApiDbContext"__id*F*D
+Repository.EventRepository"$
+_contextEntity.Data.ApiDbContextÙÖ
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csS S('
+
+%3void"`Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Collections.Generic.IEnumerable<object>)* 
+
+%2Entity.Data.ApiDbContext*6
+4
+eventAttendees"System.Collections.Generic.List<T>28AddRange(System.Collections.Generic.IEnumerable<object>)Å
+Â
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csT T(
+%4Entity.Data.ApiDbContext"__id*F*D
+Repository.EventRepository"$
+_contextEntity.Data.ApiDbContextÊÇ
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csT T(	
+%5int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()* 
+
+%4Entity.Data.ApiDbContext2SaveChanges()ª
+§
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csU U(
+%6NLog.Logger"__id*8*6
+Repository.EventRepository"
+_loggerNLog.Logger©
+¦
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csU U(i
+
+%7void".NLog.Logger.Info<TArgument>(string, TArgument)*
+
+%6NLog.Logger*GE
+CSuccessfully add the event attendee model {0} details to repository*6
+4
+eventAttendees"System.Collections.Generic.List<T>"\
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csV V(
+""*Â
+1R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csW W("i
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csW W(
+implicit return:4
+eventAttendees"System.Collections.Generic.List<T>B
+Repository.EventRepository

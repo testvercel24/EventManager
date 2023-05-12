@@ -1,0 +1,35 @@
+
+nEntity.Migrations.Serializedtableandcolumnname.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csS  S($"0*µ
+0y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csU \(æª
+y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csU V('_
+%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+EventAttendees*
+""2DropTable(string, string?)∂≥
+y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csX Y(_
+%1YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+Events*
+""2DropTable(string, string?)µ≤
+y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs[ \(_
+%2YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*	
+Users*
+""2DropTable(string, string?)*
+1*ë
+1y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs]	 ](	"ê
+y
+oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs] ](	
+implicit return:M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB20
+.Entity.Migrations.Serializedtableandcolumnname

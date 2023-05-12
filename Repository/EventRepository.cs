@@ -1,7 +1,7 @@
-using Entity.Models;
+using NLog;
 using Entity.Data;
 using Entity.Dtos;
-using NLog;
+using Entity.Models;
 namespace Repository
 {
   public class EventRepository : IEventRepository

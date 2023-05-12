@@ -1,0 +1,8 @@
+²
+Services.EventServiceobjectû
+pEventService(Repository.IEventRepository, Services.IUserService, Repository.IUserRepository, AutoMapper.IMapper)†Services.EventService.EventService(Repository.IEventRepository, Services.IUserService, Repository.IUserRepository, AutoMapper.IMapper)\
+!CreateEvent(Entity.Dtos.EventDto)7Services.EventService.CreateEvent(Entity.Dtos.EventDto)P
+GetEvents(string, int, int)1Services.EventService.GetEvents(string, int, int)š
+@CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)VServices.EventService.CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)T
+GetUsersForEvent(System.Guid)3Services.EventService.GetUsersForEvent(System.Guid)ï
+jGetConflictedUsers(System.DateTime, System.DateTime, System.Collections.Generic.List<Entity.Dtos.UserDto>)€Services.EventService.GetConflictedUsers(System.DateTime, System.DateTime, System.Collections.Generic.List<Entity.Dtos.UserDto>)

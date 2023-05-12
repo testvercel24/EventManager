@@ -1,10 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
+using NLog;
 using Services;
 using Entity.Data;
 using Entity.Dtos;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using Swashbuckle.AspNetCore.Annotations;
-using NLog;
 namespace Controller
 {
   [Route("api/Events")]
@@ -39,7 +39,7 @@ namespace Controller
 
       _logger.Info("Successfully created an event with Id {0}", eventId.Id);
 
-      return Ok(eventId);
+      return new ObjectResult(eventId) { StatusCode = 201 };
     }
 
 
@@ -88,7 +88,7 @@ namespace Controller
       {
         return Conflict(conflictedUsers);
       }
-      return Ok();
+      return Created("", "");
     }
 
 

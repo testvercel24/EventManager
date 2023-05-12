@@ -1,0 +1,11 @@
+ú
+Entity.Models.EventModelEntity.Models.BaseModelobject5
+EventModel()%Entity.Models.EventModel.EventModel()7
+EventName.get&Entity.Models.EventModel.EventName.get7
+EventName.set&Entity.Models.EventModel.EventName.set?
+StartDateTime.get*Entity.Models.EventModel.StartDateTime.get?
+StartDateTime.set*Entity.Models.EventModel.StartDateTime.set;
+EndDateTime.get(Entity.Models.EventModel.EndDateTime.get;
+EndDateTime.set(Entity.Models.EventModel.EndDateTime.setK
+eventAttendeeModels.get0Entity.Models.EventModel.eventAttendeeModels.getK
+eventAttendeeModels.set0Entity.Models.EventModel.eventAttendeeModels.set

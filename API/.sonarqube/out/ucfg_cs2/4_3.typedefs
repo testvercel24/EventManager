@@ -1,0 +1,7 @@
+ˆ
+Controller.UserController'Microsoft.AspNetCore.Mvc.ControllerBaseobjecth
+%UserController(Services.IUserService)?Controller.UserController.UserController(Services.IUserService)|
+/UploadUser(Microsoft.AspNetCore.Http.IFormFile)IController.UserController.UploadUser(Microsoft.AspNetCore.Http.IFormFile)H
+GetAllUsers(int, int)/Controller.UserController.GetAllUsers(int, int)>
+GetUserById(int)*Controller.UserController.GetUserById(int)H
+GetEventsForUser(int)/Controller.UserController.GetEventsForUser(int)

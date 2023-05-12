@@ -1,0 +1,80 @@
+
+/Controller.UserController.GetEventsForUser(int)V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csW W()"2*ÿ
+0V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csY ^(­
+ª
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csY Y(
+%0NLog.Logger"__id*7*5
+Controller.UserController"
+_loggerNLog.LoggerÐ
+Í
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csY Y(E
+
+%1void"NLog.Logger.Info(string, int)*
+
+%0NLog.Logger*+)
+'Getting Events for the user with Id {0}*
+""Æ
+Ã
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs[  [(,
+%2Services.IUserService"__id*F*D
+Controller.UserController"%
+_userServiceServices.IUserServiceðí
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs[  [(E(
+%3"System.Collections.Generic.List<T>"+Services.IUserService.GetEventsForUser(int)*
+
+%2Services.IUserService*
+""2GetEventsForUser(int)»
+¸
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs[ [(E,
+events"System.Collections.Generic.List<T>"__id**
+(
+%3"System.Collections.Generic.List<T>­
+ª
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs] ](
+%4NLog.Logger"__id*7*5
+Controller.UserController"
+_loggerNLog.Logger¼
+¹
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs] ](^
+
+%5void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
+
+%4NLog.Logger*<:
+8Successfully fetched the events {0} for user with Id {1}*.
+,
+events"System.Collections.Generic.List<T>*
+""©¦
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs^ ^(-
+%6'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*.
+,
+events"System.Collections.Generic.List<T>2Ok(object?)"‰
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs^ ^(/
+-
+%6'Microsoft.AspNetCore.Mvc.OkObjectResult*Ê
+1V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs_ _("m
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs_ _(
+implicit return*Ø
+2V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csWS W(Sv
+t
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csW W()
+%7"__entrypoint*
+""*
+0:
+userIdintB
+Controller.UserController

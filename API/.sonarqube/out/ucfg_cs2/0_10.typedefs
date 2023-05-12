@@ -1,0 +1,9 @@
+ù
+Entity.Data.CustomExceptionSystem.Exceptionobjecth
+$CustomException(int, string, string)@Entity.Data.CustomException.CustomException(int, string, string)0
+Code.get$Entity.Data.CustomException.Code.get0
+Code.set$Entity.Data.CustomException.Code.set8
+Messages.get(Entity.Data.CustomException.Messages.get8
+Messages.set(Entity.Data.CustomException.Messages.set>
+Description.get+Entity.Data.CustomException.Description.get>
+Description.set+Entity.Data.CustomException.Description.set

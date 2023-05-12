@@ -1,0 +1,26 @@
+
+5Entity.Models.EventAttendeeModel.EventAttendeeModel()X
+NC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\EventAttendeeModel.cs (!"0*µ
+0X
+NC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\EventAttendeeModel.cs (Ã
+À
+X
+NC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\EventAttendeeModel.cs (.	
+%0int"+Entity.Models.EventAttendeeModel.UserId.set*$"
+ Entity.Models.EventAttendeeModel*
+""Ì
+É
+X
+NC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\EventAttendeeModel.cs
+ (0
+%1System.Guid",Entity.Models.EventAttendeeModel.EventId.set*$"
+ Entity.Models.EventAttendeeModel*
+""P
+N
+
+%2void"#Entity.Models.BaseModel.BaseModel()*
+Entity.Models.BaseModel"o
+X
+NC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\EventAttendeeModel.cs (
+implicit returnB$"
+ Entity.Models.EventAttendeeModel

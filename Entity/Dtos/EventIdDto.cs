@@ -3,7 +3,7 @@ namespace Entity.Dtos
 {
   public class EventIdDto : EventDto
   {
-    [JsonPropertyName("event_id")]
+    [JsonPropertyName("id")]
     public Guid Id { get; set; }
   }
 }

@@ -1,0 +1,65 @@
+
+…Repository.EventRepository.GetConflictedUsers(System.DateTime, System.DateTime, System.Collections.Generic.List<Entity.Dtos.UserDto>)R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csl l(+"0*Ë
+0R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csn w(ª
+§
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csn n(
+%0NLog.Logger"__id*8*6
+Repository.EventRepository"
+_loggerNLog.LoggerÌ
+É
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csn n(p
+
+%1void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
+
+%0NLog.Logger*B@
+>Getting the conflicted users within the time range {0} and {1}*"
+ 
+startDateTimeSystem.DateTime* 
+
+endDateTimeSystem.DateTime‰
+†
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cso
+ u(W"
+usersSystem.Linq.IQueryable<T>"__id*
+""ª
+§
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csv v(
+%2NLog.Logger"__id*8*6
+Repository.EventRepository"
+_loggerNLog.Loggerš
+—
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csv v(c
+
+%3void".NLog.Logger.Info<TArgument>(string, TArgument)*
+
+%2NLog.Logger*JH
+FSuccessfully fetched all the conflicted users {0} for given time range*$
+"
+usersSystem.Linq.IQueryable<T>œ
+™
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csw w((
+%4"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*$
+"
+usersSystem.Linq.IQueryable<T>"€
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csw w(*
+(
+%4"System.Collections.Generic.List<T>*Â
+1R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csx x("i
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.csx x(
+implicit return: 
+startDateTimeSystem.DateTime:
+endDateTimeSystem.DateTime:/
+	attendees"System.Collections.Generic.List<T>B
+Repository.EventRepository

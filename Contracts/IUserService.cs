@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Http;
 using Entity.Dtos;
+using Microsoft.AspNetCore.Http;
 namespace Services
 {
   public interface IUserService

@@ -1,0 +1,33 @@
+
+'API.Program.CreateHostBuilder(string[])C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs
+ 
+(0"0*î
+0C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (ö
+ó
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (,/
+%0)Microsoft.Extensions.Hosting.IHostBuilder"@Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(string[])*%"#
+!Microsoft.Extensions.Hosting.Host*
+
+argsstring[]°
+­
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (/
+%1)Microsoft.Extensions.Hosting.IHostBuilder"ºMicrosoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Microsoft.AspNetCore.Hosting.IWebHostBuilder>)*=";
+9Microsoft.Extensions.Hosting.GenericHostBuilderExtensions*1
+/
+%0)Microsoft.Extensions.Hosting.IHostBuilder*
+"""x
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (1
+/
+%1)Microsoft.Extensions.Hosting.IHostBuilder*¤
+1C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs ("Z
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (
+implicit return:
+argsstring[]B"
+API.Program

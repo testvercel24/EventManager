@@ -1,8 +1,7 @@
-using Entity.Models;
-using Entity.Data;
-using Microsoft.Extensions.Logging;
-using Entity.Dtos;
 using NLog;
+using Entity.Data;
+using Entity.Dtos;
+using Entity.Models;
 namespace Repository
 {
 

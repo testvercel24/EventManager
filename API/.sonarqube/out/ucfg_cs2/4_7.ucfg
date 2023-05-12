@@ -1,0 +1,36 @@
+
+BController.EventController.EventController(Services.IEventService)W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs ("3*Ø
+1W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (u
+s
+
+%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+0*¹
+0W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs ("Õ
+Ò
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs ("G
+Controller.EventController"'
+_eventServiceServices.IEventService"__id*(
+&
+eventServiceServices.IEventService*
+2*Ì
+2W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs ("n
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (
+implicit return*þ
+3W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs6 (6š
+—
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (
+%1"__entrypoint*(
+&
+eventServiceServices.IEventService*
+1:&
+eventServiceServices.IEventServiceB
+Controller.EventController

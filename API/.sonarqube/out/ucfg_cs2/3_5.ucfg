@@ -1,0 +1,58 @@
+
+*Services.UserService.GetAllUsers(int, int)L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs> >($"0*Ô
+0L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs@ B(Ä
+Á
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs@# @(2 
+%0Repository.IUserRepository"__id*I*G
+Services.UserService"-
+_userRepositoryRepository.IUserRepositoryøõ
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs@# @(S(
+%1"System.Collections.Generic.List<T>"0Repository.IUserRepository.GetAllUsers(int, int)*"
+ 
+%0Repository.IUserRepository*
+""*
+""2GetAllUsers(int, int)µ
+²
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs@ @(S0
+
+userModels"System.Collections.Generic.List<T>"__id**
+(
+%1"System.Collections.Generic.List<T>¬
+©
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csA" A()
+%2AutoMapper.IMapper"__id*9*7
+Services.UserService"
+_mapperAutoMapper.IMapper˜•
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csA" A(H(
+%3"System.Collections.Generic.List<T>"0AutoMapper.IMapperBase.Map<TDestination>(object)*
+
+%2AutoMapper.IMapper*2
+0
+
+userModels"System.Collections.Generic.List<T>2Map<TDestination>(object)¶
+³
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csA A(H1
+userDtoList"System.Collections.Generic.List<T>"__id**
+(
+%3"System.Collections.Generic.List<T>"ƒ
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csB B(3
+1
+userDtoList"System.Collections.Generic.List<T>*¶
+1L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csC C("c
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csC C(
+implicit return:
+
+startIndexint:
+rowSizeintB
+Services.UserService

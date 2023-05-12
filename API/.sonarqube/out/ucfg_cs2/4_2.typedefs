@@ -1,0 +1,7 @@
+ó
+Controller.EventController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectm
+'EventController(Services.IEventService)BController.EventController.EventController(Services.IEventService)a
+!CreateEvent(Entity.Dtos.EventDto)<Controller.EventController.CreateEvent(Entity.Dtos.EventDto)U
+GetEvents(string, int, int)6Controller.EventController.GetEvents(string, int, int)Ÿ
+@CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)[Controller.EventController.CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)Y
+GetUsersForEvent(System.Guid)8Controller.EventController.GetUsersForEvent(System.Guid)

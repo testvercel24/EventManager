@@ -1,0 +1,36 @@
+
+?Controller.UserController.UserController(Services.IUserService)V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs ("3*×
+1V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (u
+s
+
+%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+0*²
+0V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs ( Ï
+Ì
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs ( D
+Controller.UserController"%
+_userServiceServices.IUserService"__id*&
+$
+userServiceServices.IUserService*
+2*Ê
+2V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs ("m
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (
+implicit return*ú
+3V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs3 (3—
+”
+V
+LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (
+%1"__entrypoint*&
+$
+userServiceServices.IUserService*
+1:$
+userServiceServices.IUserServiceB
+Controller.UserController

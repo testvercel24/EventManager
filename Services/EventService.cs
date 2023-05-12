@@ -1,13 +1,12 @@
-using Microsoft.AspNetCore.Http;
+using NLog;
 using CsvHelper;
-using System.Globalization;
-using Entity.Models;
+using AutoMapper;
 using Repository;
 using Entity.Data;
 using Entity.Dtos;
-using AutoMapper;
-using Microsoft.Extensions.Logging;
-using NLog;
+using Entity.Models;
+using System.Globalization;
+using Microsoft.AspNetCore.Http;
 namespace Services
 {
   public class EventService : IEventService

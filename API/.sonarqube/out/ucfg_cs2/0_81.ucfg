@@ -1,0 +1,56 @@
+
+LEntity.Data.AutoMapping.Configure(AutoMapper.IMapperConfigurationExpression)O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs ( "0*˘
+0O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (=≠™
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (,:
+%04AutoMapper.IMappingExpression<TSource, TDestination>"@AutoMapper.IProfileExpression.CreateMap<TSource, TDestination>()*5
+3
+config)AutoMapper.IMapperConfigurationExpression2"CreateMap<TSource, TDestination>()Å˛
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (N:
+%14AutoMapper.IMappingExpression<TSource, TDestination>"ÈAutoMapper.IMappingExpression<TSource, TDestination>.ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)*<
+:
+%04AutoMapper.IMappingExpression<TSource, TDestination>*
+""*
+""2¥ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)Å˛
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (T:
+%24AutoMapper.IMappingExpression<TSource, TDestination>"ÈAutoMapper.IMappingExpression<TSource, TDestination>.ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)*<
+:
+%14AutoMapper.IMappingExpression<TSource, TDestination>*
+""*
+""2¥ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)≠™
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (.:
+%34AutoMapper.IMappingExpression<TSource, TDestination>"@AutoMapper.IProfileExpression.CreateMap<TSource, TDestination>()*5
+3
+config)AutoMapper.IMapperConfigurationExpression2"CreateMap<TSource, TDestination>()≠™
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (1:
+%44AutoMapper.IMappingExpression<TSource, TDestination>"@AutoMapper.IProfileExpression.CreateMap<TSource, TDestination>()*5
+3
+config)AutoMapper.IMapperConfigurationExpression2"CreateMap<TSource, TDestination>()Å˛
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (H:
+%54AutoMapper.IMappingExpression<TSource, TDestination>"ÈAutoMapper.IMappingExpression<TSource, TDestination>.ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)*<
+:
+%44AutoMapper.IMappingExpression<TSource, TDestination>*
+""*
+""2¥ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)Å˛
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (>:
+%64AutoMapper.IMappingExpression<TSource, TDestination>"ÈAutoMapper.IMappingExpression<TSource, TDestination>.ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)*<
+:
+%54AutoMapper.IMappingExpression<TSource, TDestination>*
+""*
+""2¥ForMember<TMember>(System.Linq.Expressions.Expression<System.Func<TDestination, TMember>>, System.Action<AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>>)*
+1*º
+1O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs ("f
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\AutoMapping.cs (
+implicit return:3
+config)AutoMapper.IMapperConfigurationExpressionB"
+Entity.Data.AutoMapping

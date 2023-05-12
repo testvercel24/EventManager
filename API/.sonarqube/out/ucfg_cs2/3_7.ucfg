@@ -1,0 +1,129 @@
+
+3Services.EventService.GetUsersForEvent(System.Guid)O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csò ò()"0*ï
+
+0O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csö ù(¢
+ü
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csö ö(
+%0NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Logger·
+ﬁ
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csö ö(M
+
+%1void".NLog.Logger.Info<TArgument>(string, TArgument)*
+
+%0NLog.Logger*20
+.Getting all the users for the evet with ID {0}*
+""À
+»
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csú ú(/!
+%2Repository.IEventRepository"__id*L*J
+Services.EventService"/
+_eventRepositoryRepository.IEventRepositoryÛ
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csú ú(E
+%3Entity.Models.EventModel"5Repository.IEventRepository.GetEventById(System.Guid)*#
+!
+%2Repository.IEventRepository*
+""2GetEventById(System.Guid)§
+°
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csú ú(E&
+
+eventModelEntity.Models.EventModel"__id* 
+
+%3Entity.Models.EventModel¬
+ø
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csù
+ ù(
+
+%4bool""object.operator ==(object, object)*
+"
+object*(
+&
+
+eventModelEntity.Models.EventModel*
+""*
+1
+2*ﬂ
+1O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csü †(E¢
+ü
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csü ü(
+%5NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.Logger“
+œ
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csü ü(@
+
+%6void"/NLog.Logger.Error<TArgument>(string, TArgument)*
+
+%5NLog.Logger*" 
+No event found with the Id {0}*
+""îë
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs† †(F!
+%7Entity.Data.CustomException"Entity.Data.CustomExceptionÚ
+Ô
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs† †(!
+
+%8void"@Entity.Data.CustomException.CustomException(int, string, string)*#
+!
+%7Entity.Data.CustomException*2î*
+	Not found*
+Event not found*
+3*˙	
+2O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs£ ¶(»
+≈
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs£ £(+ 
+%9Repository.IUserRepository"__id*J*H
+Services.EventService"-
+_userRepositoryRepository.IUserRepositoryÑÅ
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs£ £(E)
+%10"System.Collections.Generic.List<T>"8Repository.IUserRepository.GetUsersForEvent(System.Guid)*"
+ 
+%9Repository.IUserRepository*
+""2GetUsersForEvent(System.Guid)¥
+±
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs£ £(E+
+users"System.Collections.Generic.List<T>"__id*+
+)
+%10"System.Collections.Generic.List<T>£
+†
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs• •(
+%11NLog.Logger"__id*3*1
+Services.EventService"
+_loggerNLog.LoggerÒ
+Ó
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs• •([
+%12void".NLog.Logger.Info<TArgument>(string, TArgument)*
+
+%11NLog.Logger*@>
+<Successfully fetched all the users for the event with Id {0}*
+"""Ä
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs¶ ¶(-
++
+users"System.Collections.Generic.List<T>*º
+3O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csß ß("f
+O
+CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csß ß(
+implicit return:
+eventIdSystem.GuidB
+Services.EventService

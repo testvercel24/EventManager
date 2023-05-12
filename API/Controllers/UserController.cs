@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
+using NLog;
 using Services;
 using Entity.Data;
-using Swashbuckle.AspNetCore.Annotations;
 using Entity.Dtos;
-using NLog;
+using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 namespace Controller
 {
   [Route("api/users")]
@@ -28,7 +28,7 @@ namespace Controller
     {
       _logger.Info("Started uploding {0} details", file);
 
-      bool upload = _userService.UploadUser(file);
+      _userService.UploadUser(file);
 
       _logger.Info("Successfully uploaded the {0} details", file);
 

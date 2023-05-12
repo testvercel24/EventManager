@@ -1,0 +1,2 @@
+﻿C:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs
+C:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs

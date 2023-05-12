@@ -1,0 +1,27 @@
+
+Entity.Dtos.EventDto.EventDto()L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\EventDto.cs ("0*Æ
+0L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\EventDto.cs (¥
+¢
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\EventDto.cs 	(:
+%0string""Entity.Dtos.EventDto.EventName.set*
+Entity.Dtos.EventDto*
+""²
+¯
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\EventDto.cs (:
+%1System.DateTime"&Entity.Dtos.EventDto.StartDateTime.set*
+Entity.Dtos.EventDto*
+""°
+­
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\EventDto.cs (8
+%2System.DateTime"$Entity.Dtos.EventDto.EndDateTime.set*
+Entity.Dtos.EventDto*
+"""c
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\EventDto.cs (
+implicit returnB
+Entity.Dtos.EventDto

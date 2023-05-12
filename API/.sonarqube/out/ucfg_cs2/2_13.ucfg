@@ -1,0 +1,59 @@
+
+7Repository.UserRepository.GetUsersForEvent(System.Guid)Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csL L()"0*«
+0Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csN T(¨
+¥
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csN N(
+%0NLog.Logger"__id*7*5
+Repository.UserRepository"
+_loggerNLog.LoggerÞ
+Û
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csN N(H
+
+%1void".NLog.Logger.Info<TArgument>(string, TArgument)*
+
+%0NLog.Logger*-+
+)Fetching all the users with event Id  {0}*
+""ˆ
+…
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csO
+ R(W"
+usersSystem.Linq.IQueryable<T>"__id*
+""¨
+¥
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csS S(
+%2NLog.Logger"__id*7*5
+Repository.UserRepository"
+_loggerNLog.Loggerñ
+î
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csS S([
+
+%3void".NLog.Logger.Info<TArgument>(string, TArgument)*
+
+%2NLog.Logger*@>
+<Successfully fetched all the users for the event with Id {0}*
+""›
+˜
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csT T((
+%4"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*$
+"
+usersSystem.Linq.IQueryable<T>"
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csT T(*
+(
+%4"System.Collections.Generic.List<T>*À
+1Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csU U("h
+Q
+GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csU U(
+implicit return:
+eventIdSystem.GuidB
+Repository.UserRepository

@@ -1,0 +1,39 @@
+
+mServices.UserService.UserService(Repository.IUserRepository, Repository.IEventRepository, AutoMapper.IMapper)L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs ("1*V
+1L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs (*
+0*³
+0L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs ((Ð
+Í
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs (&G
+Services.UserService"-
+_userRepositoryRepository.IUserRepository"__id*.
+,
+userRepositoryRepository.IUserRepository°
+­
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs (7
+Services.UserService"
+_mapperAutoMapper.IMapper"__id*
+
+mapperAutoMapper.IMapperÔ
+Ñ
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs ((I
+Services.UserService"/
+_eventRepositoryRepository.IEventRepository"__id*0
+.
+eventRepositoryRepository.IEventRepository*
+2*¶
+2L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs ("c
+L
+BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs (
+implicit return:,
+userRepositoryRepository.IUserRepository:.
+eventRepositoryRepository.IEventRepository:
+mapperAutoMapper.IMapperB
+Services.UserService

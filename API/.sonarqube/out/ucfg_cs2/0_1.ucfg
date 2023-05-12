@@ -1,0 +1,40 @@
+
+#Entity.Models.BaseModel.BaseModel()O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs ("0*°
+0O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs (è
+å
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs	# 	(1
+%0System.Guid"System.Guid.NewGuid()*"
+System.Guidπ
+∂
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs 	(2
+%1System.Guid"Entity.Models.BaseModel.Id.set*
+Entity.Models.BaseModel*
+
+%0System.Guidô
+ñ
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs0 (<
+%2System.DateTime"System.DateTime.Now.get*"
+System.DateTime 
+«
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs (=
+%3System.DateTime"'Entity.Models.BaseModel.CreatedDate.set*
+Entity.Models.BaseModel*
+
+%2System.DateTime´
+®
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs (.
+
+%4bool"$Entity.Models.BaseModel.IsActive.set*
+Entity.Models.BaseModel*
+"""f
+O
+EC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Models\BaseModel.cs (
+implicit returnB
+Entity.Models.BaseModel

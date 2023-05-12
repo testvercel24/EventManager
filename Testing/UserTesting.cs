@@ -1,23 +1,7 @@
 using Xunit;
 using Entity.Dtos;
-using System.Net;
-using Microsoft.AspNetCore.Mvc;
 using Entity.Data;
-using Xunit.Abstractions;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Testing;
-using System.Net.Http.Headers;
-using System.IO;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using API;
-using CsvHelper;
-using System.Globalization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 namespace Testing
 {

@@ -1,15 +1,12 @@
+using Services;
+using Repository;
+using AutoMapper;
 using Controller;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Entity.Data;
-using Microsoft.EntityFrameworkCore;
 using Entity.Dtos;
 using Entity.Models;
-using Repository;
-using Services;
-using Microsoft.EntityFrameworkCore.InMemory;
-using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 namespace Testing
 {
   public class BaseTesting

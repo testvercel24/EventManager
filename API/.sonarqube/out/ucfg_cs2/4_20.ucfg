@@ -1,0 +1,181 @@
+
+ZAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs (!"0*©E
+0C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs 6(=≤
+Ø
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs (:
+%04Microsoft.Extensions.DependencyInjection.IMvcBuilder"ìMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection)*K"I
+GMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionÚ
+Ô
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs ((A
+%1;Microsoft.Extensions.DependencyInjection.IServiceCollection"¥Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions.AddEndpointsApiExplorer(Microsoft.Extensions.DependencyInjection.IServiceCollection)*c"a
+_Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectioní
+è
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs (A
+%2;Microsoft.Extensions.DependencyInjection.IServiceCollection"›Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.AddSwaggerGen(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>)*R"P
+NMicrosoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""Ç
+ˇ
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs (A
+%3;Microsoft.Extensions.DependencyInjection.IServiceCollection"–Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>)*O"M
+KMicrosoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""éã
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs !($
+%4AutoMapper.MapperConfiguration"AutoMapper.MapperConfigurationÚ
+Ô
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs (0
+
+%5void"lAutoMapper.MapperConfiguration.MapperConfiguration(System.Action<AutoMapper.IMapperConfigurationExpression>)*&
+$
+%4AutoMapper.MapperConfiguration*
+""¶
+£
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs
+ !(.
+mapperConfigAutoMapper.MapperConfiguration"__id*&
+$
+%4AutoMapper.MapperConfiguration√
+¿
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs" "(2
+%6AutoMapper.IMapper"-AutoMapper.MapperConfiguration.CreateMapper()*0
+.
+mapperConfigAutoMapper.MapperConfigurationà
+Ö
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs" "(2
+mapperAutoMapper.IMapper"__id*
+
+%6AutoMapper.IMapperÛ
+
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs# #(#A
+%7;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+
+mapperAutoMapper.IMapperéã
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs% (($
+%8AutoMapper.MapperConfiguration"AutoMapper.MapperConfigurationÚ
+Ô
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs% %(*
+
+%9void"lAutoMapper.MapperConfiguration.MapperConfiguration(System.Action<AutoMapper.IMapperConfigurationExpression>)*&
+$
+%8AutoMapper.MapperConfiguration*
+""†
+ù
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs%
+ (((
+configAutoMapper.MapperConfiguration"__id*&
+$
+%8AutoMapper.MapperConfigurationæ
+ª
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs) )(1
+%10AutoMapper.IMapper"-AutoMapper.MapperConfiguration.CreateMapper()**
+(
+configAutoMapper.MapperConfigurationÒ
+Ó
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs) )(2B
+%11;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+
+%10AutoMapper.IMapper 
+«
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs, ,()B
+%12;Microsoft.Extensions.DependencyInjection.IServiceCollection"†Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions.AddEntityFrameworkNpgsql(Microsoft.Extensions.DependencyInjection.IServiceCollection)*N"L
+JMicrosoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection®
+•
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs, .(yB
+%13;Microsoft.Extensions.DependencyInjection.IServiceCollection"‚Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder>?, Microsoft.Extensions.DependencyInjection.ServiceLifetime, Microsoft.Extensions.DependencyInjection.ServiceLifetime)*W"U
+SMicrosoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions*D
+B
+%12;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""*
+""…
+∆
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs/ /(H
+%14void")System.AppContext.SetSwitch(string, bool)*"
+System.AppContext*(&
+$Npgsql.EnableLegacyTimestampBehavior*
+""«
+ƒ
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs1 1(*B
+%15;Microsoft.Extensions.DependencyInjection.IServiceCollection"úMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionÿ
+’
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs2 2(5B
+%16;Microsoft.Extensions.DependencyInjection.IServiceCollection"≠Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionÿ
+’
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs3 3(;B
+%17;Microsoft.Extensions.DependencyInjection.IServiceCollection"≠Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection«
+ƒ
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs4 4(+B
+%18;Microsoft.Extensions.DependencyInjection.IServiceCollection"úMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionÿ
+’
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs5 5(7B
+%19;Microsoft.Extensions.DependencyInjection.IServiceCollection"≠Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionÿ
+’
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs6 6(=B
+%20;Microsoft.Extensions.DependencyInjection.IServiceCollection"≠Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+1*§
+1C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs7 7("Z
+C
+9C:\Users\VishnuPadiga\Desktop\EventManager\API\Startup.cs7 7(
+implicit return:G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionB
+API.Startup

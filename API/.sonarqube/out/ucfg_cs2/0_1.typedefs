@@ -1,0 +1,9 @@
+ç
+Entity.Models.BaseModelobject2
+BaseModel()#Entity.Models.BaseModel.BaseModel()(
+Id.getEntity.Models.BaseModel.Id.get(
+Id.setEntity.Models.BaseModel.Id.set:
+CreatedDate.get'Entity.Models.BaseModel.CreatedDate.get:
+CreatedDate.set'Entity.Models.BaseModel.CreatedDate.set4
+IsActive.get$Entity.Models.BaseModel.IsActive.get4
+IsActive.set$Entity.Models.BaseModel.IsActive.set

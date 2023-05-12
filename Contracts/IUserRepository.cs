@@ -1,5 +1,5 @@
-using Entity.Models;
 using Entity.Dtos;
+using Entity.Models;
 namespace Repository
 {
   public interface IUserRepository

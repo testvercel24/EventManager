@@ -1,0 +1,102 @@
+
+2Repository.EventRepository.GetPastEvents(int, int)R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs5 5()"0*„
+0R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs7 :(™
+ß
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs7 7(
+%0NLog.Logger"__id*8*6
+Repository.EventRepository"
+_loggerNLog.Logger«
+ƒ
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs7 7(E
+
+%1void"NLog.Logger.Info(string)*
+
+%0NLog.Logger*31
+/Fetching all the past events that are completed≈
+¬
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8  8((
+%2Entity.Data.ApiDbContext"__id*F*D
+Repository.EventRepository"$
+_contextEntity.Data.ApiDbContextﬁ€
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8  8(/2
+%3,Microsoft.EntityFrameworkCore.DbSet<TEntity>"#Entity.Data.ApiDbContext.Events.get* 
+
+%2Entity.Data.ApiDbContext2
+Events.getŸ
+÷
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8  8(p
+%4System.Linq.IQueryable<T>"ÖSystem.Linq.Queryable.Where<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
+System.Linq.Queryable*4
+2
+%3,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""ä
+á
+S
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8  8(Å
+%5System.Linq.IQueryable<T>"ISystem.Linq.Queryable.Skip<TSource>(System.Linq.IQueryable<TSource>, int)*"
+System.Linq.Queryable*!
+
+%4System.Linq.IQueryable<T>*
+""ä
+á
+S
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8  8(è
+%6System.Linq.IQueryable<T>"ISystem.Linq.Queryable.Take<TSource>(System.Linq.IQueryable<TSource>, int)*"
+System.Linq.Queryable*!
+
+%5System.Linq.IQueryable<T>*
+""ö
+ó
+S
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8  8(ò(
+%7"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*!
+
+%6System.Linq.IQueryable<T>∏
+µ
+S
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs8 8(ò,
+events"System.Collections.Generic.List<T>"__id**
+(
+%7"System.Collections.Generic.List<T>™
+ß
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs9 9(
+%8NLog.Logger"__id*8*6
+Repository.EventRepository"
+_loggerNLog.Logger¿
+Ω
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs9 9(>
+
+%9void"NLog.Logger.Info(string)*
+
+%8NLog.Logger*,*
+(Successfully fetched all the past eventsß
+§
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs: :()
+%10"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*.
+,
+events"System.Collections.Generic.List<T>"Å
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs: :(+
+)
+%10"System.Collections.Generic.List<T>*¬
+1R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs; ;("i
+R
+HC:\Users\VishnuPadiga\Desktop\EventManager\Repository\EventRepository.cs; ;(
+implicit return:
+
+startIndexint:
+rowSizeintB
+Repository.EventRepository

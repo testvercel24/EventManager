@@ -1,0 +1,184 @@
+
+[Controller.EventController.CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csP P('"4*Ä
+0W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csR W($Ø
+¨
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csR R(
+%0NLog.Logger"__id*8*6
+Controller.EventController"
+_loggerNLog.Logger¥
+±
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csR R(U
+
+%1void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
+
+%0NLog.Logger*42
+0Started mapping user {0} details to event id {1}*-
++
+file#Microsoft.AspNetCore.Http.IFormFile*
+""À
+»
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csT& T(3
+%2Services.IEventService"__id*I*G
+Controller.EventController"'
+_eventServiceServices.IEventService¯ı
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csT& T(Q(
+%3"System.Collections.Generic.List<T>"WServices.IEventService.CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)*
+
+%2Services.IEventService*
+""*-
++
+file#Microsoft.AspNetCore.Http.IFormFile2@CreateAttendee(System.Guid, Microsoft.AspNetCore.Http.IFormFile)≈
+¬
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csT T(Q5
+conflictedUsers"System.Collections.Generic.List<T>"__id**
+(
+%3"System.Collections.Generic.List<T>Ø
+¨
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csV V(
+%4NLog.Logger"__id*8*6
+Controller.EventController"
+_loggerNLog.Loggerú
+ô
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csV V(}
+
+%5void"`NLog.Logger.Info<TArgument1, TArgument2, TArgument3>(string, TArgument1, TArgument2, TArgument3)*
+
+%4NLog.Logger*KI
+GSuccessfully mapped {0} to eventId {1} and returns conflicted users {2}*-
++
+file#Microsoft.AspNetCore.Http.IFormFile*
+""*7
+5
+conflictedUsers"System.Collections.Generic.List<T>Œ
+À
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csW
+ W(	
+%6int",System.Collections.Generic.List<T>.Count.get*7
+5
+conflictedUsers"System.Collections.Generic.List<T>*
+1
+2*∑
+1W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csY Y('≈¬
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csY Y((3
+%7-Microsoft.AspNetCore.Mvc.ConflictObjectResult"9Microsoft.AspNetCore.Mvc.ControllerBase.Conflict(object?)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*7
+5
+conflictedUsers"System.Collections.Generic.List<T>2Conflict(object?)"ê
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csY Y()5
+3
+%7-Microsoft.AspNetCore.Mvc.ConflictObjectResult*Ã
+2W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs[ [(Ê„
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs[ [('
+%8!Microsoft.AspNetCore.Mvc.OkResult",Microsoft.AspNetCore.Mvc.ControllerBase.Ok()*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase2Ok()"Ñ
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs[ [()
+'
+%8!Microsoft.AspNetCore.Mvc.OkResult*Ã
+3W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs\ \("n
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs\ \(
+implicit return*˛
+4Y
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csPí P(íß
+§
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csP P('
+%9"__entrypoint*
+""*-
++
+file#Microsoft.AspNetCore.Http.IFormFile‚
+ﬂ
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csP` P(w
+%10"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromFormAttribute.FromFormAttribute()*-
++
+file#Microsoft.AspNetCore.Http.IFormFile
+Ì
+X
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csPy P(Å
+%11"
+__annotate*OM
+KSystem.ComponentModel.DataAnnotations.RequiredAttribute.RequiredAttribute()*-
++
+file#Microsoft.AspNetCore.Http.IFormFileË
+Â
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csC C(!
+%12"
+__annotate*HF
+DMicrosoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute(string)*-
++
+file#Microsoft.AspNetCore.Http.IFormFileí
+è
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csL L(G
+%13"
+__annotate*rp
+nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
++
+file#Microsoft.AspNetCore.Http.IFormFileí
+è
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csM M(A
+%14"
+__annotate*rp
+nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
++
+file#Microsoft.AspNetCore.Http.IFormFileí
+è
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csN N(E
+%15"
+__annotate*rp
+nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
++
+file#Microsoft.AspNetCore.Http.IFormFileí
+è
+W
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csO O(K
+%16"
+__annotate*rp
+nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
++
+file#Microsoft.AspNetCore.Http.IFormFile◊
+‘
+X
+MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csP_ P(ë+
+file#Microsoft.AspNetCore.Http.IFormFile"__annotation*
+
+%10*
+
+%11*
+
+%12*
+
+%13*
+
+%14*
+
+%15*
+
+%16*
+0:
+eventIdSystem.Guid:+
+file#Microsoft.AspNetCore.Http.IFormFileB
+Controller.EventController
