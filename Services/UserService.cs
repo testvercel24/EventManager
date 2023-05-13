@@ -30,7 +30,13 @@ namespace Services
     ///<result name=bool>Returns true after succseful upload the details</result>
     public bool UploadUser(IFormFile file)
     {
-      _logger.Info("Started uploading userIds and userNames from {0}", file);
+      _logger.Info("Started uploading userIds and userNames for file");
+      string extension = Path.GetExtension(file.FileName);
+      if (extension.ToLower() != ".csv")
+      {
+        _logger.Error("File format is not as csv format");
+        throw new CustomException(100, "Bad request", "Invalid file format");
+      }
       try
       {
         _logger.Debug("Assigning file {0} details to UserModel", file);
@@ -40,15 +46,16 @@ namespace Services
         {
           var users = csv.GetRecords<UserModel>().ToList();
           _logger.Debug("Uploding UserModel details {0}", users);
+
           bool upload = _userRepository.UploadUser(users);
-          _logger.Info("Successfully uploaded details users {0}", users);
+          _logger.Info("Successfully uploaded details users");
           return true;
         }
       }
       catch
       {
-        _logger.Error("Invalid csv file bad request");
-        throw new CustomException(400, "Bad request", "Invalid Csv file format");
+        _logger.Error("Invalid csv file format without proper headers or empty rows bad request");
+        throw new CustomException(400, "Bad request", "Give proper Headers as UserId and UserName and remove empty rows");
       }
     }
 
@@ -77,14 +84,14 @@ namespace Services
       UserModel? userModel = _userRepository.GetUserById(userId);
       if (userModel == null)
       {
-        _logger.Error("No user details is found for Id {0}", userId);
+        _logger.Error("No user details is found for Id");
         throw new CustomException(404, "Not Found", "User not found");
       }
       _logger.Debug("Mapping user model details {0} to user dto", userModel);
 
       UserDto user = _mapper.Map<UserDto>(userModel);
 
-      _logger.Info("Successfully fetched user details {0} for user id {1}", user, userId);
+      _logger.Info("Successfully fetched user details");
 
       return user;
     }
@@ -96,18 +103,19 @@ namespace Services
     ///<result name=List<EventIdDto>Returns all the details of the events associated with userId</result>
     public List<EventIdDto> GetEventsForUser(int userId)
     {
-      _logger.Info("Getting all the events for the user with Id {0}", userId);
+      _logger.Info("Getting all the events for the user with Id");
 
       UserModel? userModel = _userRepository.GetUserById(userId);
       if (userModel == null)
       {
-        _logger.Error("No user details is found for Id {0}", userId);
+        _logger.Error("No user details is found for Id");
         throw new CustomException(404, "Not Found", "User not found");
       }
+      _logger.Debug("Getting events for user with Id {0} from repository", userId);
 
       List<EventIdDto> events = _eventRepository.GetEventsForUser(userId);
 
-      _logger.Info("Successfully fetched all the event details {0} for user with Id {1}", events, userId);
+      _logger.Info("Successfully fetched all the event details for user with Id");
 
       return events;
     }

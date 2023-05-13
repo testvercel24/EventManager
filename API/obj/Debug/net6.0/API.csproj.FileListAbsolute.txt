@@ -68,3 +68,7 @@ C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\API.genruntimeco
 C:\Users\VishnuPadiga\Desktop\EventManager\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\VishnuPadiga\Desktop\EventManager\API\bin\Debug\net6.0\NLog.dll
 C:\Users\VishnuPadiga\Desktop\EventManager\API\bin\Debug\net6.0\nlog.config
+C:\Users\VishnuPadiga\Desktop\EventManager\API\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\API\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\API\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+C:\Users\VishnuPadiga\Desktop\EventManager\API\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll

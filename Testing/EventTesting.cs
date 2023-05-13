@@ -7,6 +7,11 @@ namespace Testing
 {
   public class EventTesting : BaseTesting
   {
+    public EventTesting() : base()
+    {
+
+    }
+
     [Fact]
     public void CreateEventTesting()
     {
@@ -16,13 +21,13 @@ namespace Testing
         StartDateTime = new DateTime(2023, 05, 14, 11, 00, 00),
         EndDateTime = new DateTime(2023, 05, 14, 11, 30, 00)
       };
-      IActionResult result = _eventController.CreateEvent(eventDto);
-      var okobject = (OkObjectResult)result;
-      IdDto? id = (IdDto?)okobject.Value;
-      Assert.NotNull(id);
+      IActionResult result = _eventController2.CreateEvent(eventDto);
+      var objectResult = (ObjectResult)result;
+      Assert.Equal(201, objectResult.StatusCode);
     }
     [Theory]
-    [InlineData("Integration Session", "2023-05-14T11:00:00Z", "2023-05-14T10:30:00Z")]
+    [InlineData("Integration Session", "2024-05-14T11:00:00Z", "2024-05-14T10:30:00Z")]
+    [InlineData("Integration Session", "2023-05-11T11:00:00Z", "2023-05-11T11:30:00Z ")]
     public void CreateEvent_BadRequestTesting(string eventName, string startDateTime, string endDateTime)
     {
       EventDto eventDto = new EventDto()
@@ -31,13 +36,16 @@ namespace Testing
         StartDateTime = DateTime.Parse(startDateTime),
         EndDateTime = DateTime.Parse(endDateTime)
       };
-      var ex = Assert.Throws<CustomException>(() => _eventController.CreateEvent(eventDto));
+      var ex = Assert.Throws<CustomException>(() => _eventController2.CreateEvent(eventDto));
       Assert.Equal(400, ex.Code);
     }
-    [Fact]
-    public void GetEvents()
+    [Theory]
+    [InlineData("all")]
+    [InlineData("past")]
+    [InlineData("upcoming")]
+    public void GetEvents(string key)
     {
-      string key = "all";
+      // string key = "all";
       IActionResult result = _eventController.GetEvents(key);
       var okObjectResult = Assert.IsType<OkObjectResult>(result);
       var returnedEvents = Assert.IsAssignableFrom<List<EventIdDto>>(okObjectResult.Value);
@@ -54,9 +62,12 @@ namespace Testing
       byte[] fileBytes = File.ReadAllBytes(filePath);
       // Create an IFormFile instance using the byte array
       IFormFile formFile = new FormFile(new MemoryStream(fileBytes), 0, fileBytes.Length, "file", "file.csv");
-      var result = _eventController.CreateAttendee(EventId, formFile);
-      var statusCodeResult = Assert.IsType<OkResult>(result);
-      Assert.Equal(200, statusCodeResult.StatusCode);
+      var result = _eventController2.CreateAttendee(EventId, formFile);
+      // var statusCodeResult = Assert.IsType<OkResult>(result);
+      // Assert.Equal(200, statusCodeResult.StatusCode);
+      var createdResult = (CreatedResult)result;
+      Assert.Equal(201, createdResult.StatusCode);
+      Assert.Equal("", createdResult.Value);
     }
 
     [Fact]

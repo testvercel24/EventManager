@@ -3,6 +3,7 @@ using Entity.Models;
 using Entity.Dtos;
 namespace Entity.Data
 {
+  [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
   public class AutoMapping : Profile
   {
     public AutoMapping()

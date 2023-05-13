@@ -33,24 +33,30 @@ namespace Testing
     [Fact]
     public void GetUserById()
     {
-      IActionResult result = _userController.GetUserById(1);
+      IActionResult result = _userController.GetUserById(user1Id);
       var okObjectResult = Assert.IsType<OkObjectResult>(result);
       var returnedUser = Assert.IsAssignableFrom<UserDto>(okObjectResult.Value);
-      Assert.Equal(1, returnedUser.UserId);
+      Assert.Equal(user1Id, returnedUser.UserId);
     }
     [Fact]
     public void GetUserById_NotFound()
     {
-      var ex = Assert.Throws<CustomException>(() => _userController.GetUserById(3));
+      var ex = Assert.Throws<CustomException>(() => _userController.GetUserById(new Random().Next()));
       Assert.Equal(404, ex.Code);
     }
     [Fact]
     public void GetEventsForUser()
     {
-      IActionResult result = _userController.GetEventsForUser(1);
+      IActionResult result = _userController.GetEventsForUser(user1Id);
       var okObjectResult = Assert.IsType<OkObjectResult>(result);
       var returnedEvents = Assert.IsAssignableFrom<List<EventIdDto>>(okObjectResult.Value);
       Assert.Equal(EventId, returnedEvents[0].Id);
+    }
+    [Fact]
+    public void GetEventsForUser_NotFound()
+    {
+      var ex = Assert.Throws<CustomException>(() => _userController.GetEventsForUser(new Random().Next()));
+      Assert.Equal(404, ex.Code);
     }
   }
 }

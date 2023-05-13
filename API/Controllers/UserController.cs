@@ -24,9 +24,11 @@ namespace Controller
     [SwaggerResponse(201, "Successfull created")]
     [SwaggerResponse(400, "Bad Request", typeof(CustomException))]
     [SwaggerResponse(500, "Internal Server Error")]
-    public IActionResult UploadUser([FromForm(Name = "File")] IFormFile file)
+    public IActionResult UploadUser(IFormFile file)
     {
       _logger.Info("Started uploding {0} details", file);
+      _logger.Info("IP address: {ipAddress}, Endpoint: {endpoint}", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
+
 
       _userService.UploadUser(file);
 
@@ -44,13 +46,13 @@ namespace Controller
     ///<result name=List<UserDto>>Returns all the active users</result>
     [SwaggerResponse(200, "Successfully", typeof(List<UserDto>))]
     [SwaggerResponse(500, "Internal server Error")]
-    public IActionResult GetAllUsers([FromQuery(Name = "start-index")] int startIndex = 0, [FromQuery(Name = "row-size")] int rowSize = 5)
+    public IActionResult GetAllUsers([FromQuery(Name = "offset")] int startIndex = 0, [FromQuery(Name = "size")] int rowSize = 5)
     {
-      _logger.Info("Getting all the active users from user repository");
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Fetching all users", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       List<UserDto> users = _userService.GetAllUsers(startIndex, rowSize);
 
-      _logger.Info("Successfully fetched all the users {0}", users);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully fetched all the users", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       return Ok(users);
     }
@@ -66,11 +68,11 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetUserById([FromRoute(Name = "user-id")] int userId)
     {
-      _logger.Info("Getting user details for Id {0}", userId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Getting user details for Id", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       UserDto user = _userService.GetUserById(userId);
 
-      _logger.Info("Successfully fetched the user details {0} for Id {1}", user, userId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully fetched the user details", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       return Ok(user);
     }
@@ -86,11 +88,12 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetEventsForUser([FromRoute(Name = "user-id")] int userId)
     {
-      _logger.Info("Getting Events for the user with Id {0}", userId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Getting Events for the user with Id", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       List<EventIdDto> events = _userService.GetEventsForUser(userId);
 
-      _logger.Info("Successfully fetched the events {0} for user with Id {1}", events, userId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully fetched the events for user with Id", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
+
       return Ok(events);
     }
   }

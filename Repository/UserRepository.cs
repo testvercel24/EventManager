@@ -21,7 +21,7 @@ namespace Repository
     ///<result name=bool>Return true after uploadin the list of all the details of the users</result>
     public bool UploadUser(List<UserModel> users)
     {
-      _logger.Info("Started uploading user details {0}", users);
+      _logger.Info("Started uploading user details");
 
       List<UserModel> newUsers = (from user in users
                                   join userModel in _context.Users
@@ -38,7 +38,7 @@ namespace Repository
       _context.Users.AddRange(newUsers);
       _context.SaveChanges();
 
-      _logger.Info("Successfully uploaded the {@users}", users);
+      _logger.Info("Successfully uploaded the users");
       return true;
     }
 
@@ -50,7 +50,9 @@ namespace Repository
     ///<result name=List<UserModel>>Returns all the user details for the given range</result>
     public List<UserModel> GetAllUsers(int startIndex, int rowSize)
     {
+      _logger.Info("Getting all the users");
       List<UserModel> users = _context.Users.Skip(startIndex).Take(rowSize).ToList();
+      _logger.Info("Successfully fetched all the events");
       return users;
     }
 
@@ -61,9 +63,9 @@ namespace Repository
     ///<result name=UserModel>Returns all the details of the user repository with the given Id</result>
     public UserModel? GetUserById(int userId)
     {
-      _logger.Info("Getting user repository details for {0}", userId);
+      _logger.Info("Getting user repository detailsfor Id");
       UserModel? user = _context.Users.FirstOrDefault(u => u.UserId == userId);
-      _logger.Info("Successfully fetched user repository details {0}", user);
+      _logger.Info("Successfully fetched user repository details");
       return user;
     }
 
@@ -74,12 +76,12 @@ namespace Repository
     ///<result name=List<UserDto>>Returns all the user details associated with given eventId</result>
     public List<UserDto> GetUsersForEvent(Guid eventId)
     {
-      _logger.Info("Fetching all the users with event Id  {0}", eventId);
+      _logger.Info("Fetching all the users with event Id");
       var users = from eventAttendees in _context.EventAttendees.Where(x => x.EventId == eventId)
                   join user in _context.Users
                       on eventAttendees.UserId equals user.UserId
                   select new UserDto { UserId = user.UserId, UserName = user.UserName };
-      _logger.Info("Successfully fetched all the users for the event with Id {0}", eventId);
+      _logger.Info("Successfully fetched all the users for the event with Id ");
       return users.ToList();
     }
 

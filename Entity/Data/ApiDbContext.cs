@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Entity.Models;
 namespace Entity.Data
 {
+  [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
   public class ApiDbContext : DbContext
   {
     public virtual DbSet<UserModel> Users { get; set; } = default!;
@@ -12,9 +13,5 @@ namespace Entity.Data
     {
 
     }
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-
-    // }
   }
 }

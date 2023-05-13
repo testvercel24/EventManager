@@ -33,11 +33,11 @@ namespace Controller
         _logger.Error("Bad request invalid model state");
         throw new CustomException(400, "Bad Request", "Invalid data format");
       }
-      _logger.Info("Started creating an event with event name {0}", eventDto.EventName);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Started creating an event with event details", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       IdDto eventId = _eventService.CreateEvent(eventDto);
 
-      _logger.Info("Successfully created an event with Id {0}", eventId.Id);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully created an event with Id", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       return new ObjectResult(eventId) { StatusCode = 201 };
     }
@@ -54,11 +54,11 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetEvents([FromRoute(Name = "event-key"), Required] string eventKey, [FromQuery(Name = "start-index")] int startIndex = 0, [FromQuery(Name = "row-size")] int rowSize = 5)
     {
-      _logger.Info("Getting list of events for {0} key", eventKey);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Getting list of events for key", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       List<EventIdDto> eventIdDtos = _eventService.GetEvents(eventKey, startIndex, rowSize);
 
-      _logger.Info("Successfully fetched the list of event {0}", eventIdDtos);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully fetched the list of event", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       return Ok(eventIdDtos);
     }
@@ -79,11 +79,11 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error", typeof(CustomException))]
     public IActionResult CreateAttendee([FromRoute(Name = "event-id"), Required] Guid eventId, [FromForm(Name = "File"), Required] IFormFile file)
     {
-      _logger.Info("Started mapping user {0} details to event id {1}", file, eventId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Started mapping user details to event id", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       List<UserDto> conflictedUsers = _eventService.CreateAttendee(eventId, file);
 
-      _logger.Info("Successfully mapped {0} to eventId {1} and returns conflicted users {2}", file, eventId, conflictedUsers);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully mapped to eventId and returns conflicted users {2}", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
       if (conflictedUsers.Count != 0)
       {
         return Conflict(conflictedUsers);
@@ -102,11 +102,11 @@ namespace Controller
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetUsersForEvent([FromRoute(Name = "event-id"), Required] Guid eventId)
     {
-      _logger.Info("Getting Users for the event with id {0}", eventId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Getting Users for the event with id", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       List<UserDto> users = _eventService.GetUsersForEvent(eventId);
 
-      _logger.Info("Successfully fetched the users {0} for the event {1}", users, eventId);
+      _logger.Info("Message: {message},IP address: {ipAddress}, Endpoint: {endpoint}", "Successfully fetched the users for the event", HttpContext.Connection.RemoteIpAddress, HttpContext.Request.Path);
 
       return Ok(users);
 

@@ -6,8 +6,12 @@ using Entity.Dtos;
 using Entity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Diagnostics;
+using NLog;
+using Microsoft.Extensions.Logging;
+using NLog.Extensions.Logging;
 namespace API
 {
+  [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
   public class Startup
   {
     public IConfiguration Configuration { get; }
@@ -26,6 +30,7 @@ namespace API
         loggingBuilder.AddConsole();
         loggingBuilder.AddDebug();
       });
+      services.AddHttpContextAccessor();
 
       var mapperConfig = new MapperConfiguration(cfg =>
       {
@@ -53,7 +58,7 @@ namespace API
       services.AddScoped<IEventService, EventService>();
       services.AddScoped<IEventRepository, EventRepository>();
     }
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor)
     {
       if (env.IsDevelopment())
       {
@@ -76,11 +81,13 @@ namespace API
               Message = baseException.Messages,
               Description = baseException.Description
             }.ToString());
+
+
             // return;
           }
         });
       });
-
+      // MyAppHttpContext.Configure(httpContextAccessor);
       app.UseSwagger();
       app.UseSwaggerUI();
       app.UseHttpsRedirection();

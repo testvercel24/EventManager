@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 namespace Entity.Dtos
 {
+  [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
   public class ErrorDto
   {
     [JsonPropertyName("code")]

@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Hosting;
 namespace API
 {
+  [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
   public class Program
   {
     static void Main(string[] args)
