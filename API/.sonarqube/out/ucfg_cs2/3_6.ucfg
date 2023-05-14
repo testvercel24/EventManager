@@ -1,90 +1,0 @@
-
-ÄServices.EventService.GetConflictedUsers(System.DateTime, System.DateTime, System.Collections.Generic.List<Entity.Dtos.UserDto>)O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs© ©(+"0*Õ
-0O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs´ µ(%¢
-ü
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs´ ´(
-%0NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.Logger…
-∆
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs´ ´(p
-
-%1void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
-
-%0NLog.Logger*B@
->Getting the conflicted users for range of datetime {0} and {1}*"
- 
-startDateTimeSystem.DateTime* 
-
-endDateTimeSystem.DateTimeÀ
-»
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs≠) ≠(9!
-%2Repository.IEventRepository"__id*L*J
-Services.EventService"/
-_eventRepositoryRepository.IEventRepositoryçä
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs≠) ≠(o(
-%3"System.Collections.Generic.List<T>"ÜRepository.IEventRepository.GetConflictedUsers(System.DateTime, System.DateTime, System.Collections.Generic.List<Entity.Dtos.UserDto>)*#
-!
-%2Repository.IEventRepository*"
- 
-startDateTimeSystem.DateTime* 
-
-endDateTimeSystem.DateTime*-
-+
-users"System.Collections.Generic.List<T>2jGetConflictedUsers(System.DateTime, System.DateTime, System.Collections.Generic.List<Entity.Dtos.UserDto>)¿
-Ω
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs≠ ≠(o8
-allConflictedUsers"System.Collections.Generic.List<T>"__id**
-(
-%3"System.Collections.Generic.List<T>†
-ù
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csØ
- ≤((<
-conflictedUsers)System.Collections.Generic.IEnumerable<T>"__id*
-""¢
-ü
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs¥ ¥(
-%4NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.LoggerÁ
-‰
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs¥ ¥(a
-
-%5void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
-
-%4NLog.Logger*75
-3Returning the list of conflicted user {0} among {1}*>
-<
-conflictedUsers)System.Collections.Generic.IEnumerable<T>*-
-+
-users"System.Collections.Generic.List<T>≥
-∞
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csµ µ(%(
-%6"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*>
-<
-conflictedUsers)System.Collections.Generic.IEnumerable<T>"}
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.csµ µ(&*
-(
-%6"System.Collections.Generic.List<T>*º
-1O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs∂ ∂("f
-O
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs∂ ∂(
-implicit return: 
-startDateTimeSystem.DateTime:
-endDateTimeSystem.DateTime:+
-users"System.Collections.Generic.List<T>B
-Services.EventService

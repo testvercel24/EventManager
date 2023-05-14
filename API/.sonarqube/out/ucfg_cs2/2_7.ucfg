@@ -1,106 +1,0 @@
-
-^Repository.UserRepository.UploadUser(System.Collections.Generic.List<Entity.Models.UserModel>)Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs ("0*ì
-0Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs +(¨
-¥
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs (
-%0NLog.Logger"__id*7*5
-Repository.UserRepository"
-_loggerNLog.Loggerþ
-û
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs (?
-
-%1void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%0NLog.Logger*&$
-"Started uploading user details {0}*-
-+
-users"System.Collections.Generic.List<T>ý
-ú
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs! $(-(
-%2"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*
-""¸
-µ
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs $(-.
-newUsers"System.Collections.Generic.List<T>"__id**
-(
-%2"System.Collections.Generic.List<T>¨
-¥
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs% %(
-%3NLog.Logger"__id*7*5
-Repository.UserRepository"
-_loggerNLog.LoggerÏ
-Ì
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs% %(N
-
-%4void"INLog.Logger.Debug<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
-
-%3NLog.Logger**(
-&Fetched the new users {0} from the {1}*0
-.
-newUsers"System.Collections.Generic.List<T>*-
-+
-users"System.Collections.Generic.List<T>Ã
-À
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs' '(
-%5Entity.Data.ApiDbContext"__id*E*C
-Repository.UserRepository"$
-_contextEntity.Data.ApiDbContextÛØ
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs' '(2
-%6,Microsoft.EntityFrameworkCore.DbSet<TEntity>""Entity.Data.ApiDbContext.Users.get* 
-
-%5Entity.Data.ApiDbContext2	Users.getíê
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs' '('
-
-%7void"fMicrosoft.EntityFrameworkCore.DbSet<TEntity>.AddRange(System.Collections.Generic.IEnumerable<TEntity>)*4
-2
-%6,Microsoft.EntityFrameworkCore.DbSet<TEntity>*0
-.
-newUsers"System.Collections.Generic.List<T>29AddRange(System.Collections.Generic.IEnumerable<TEntity>)Ã
-À
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs( ((
-%8Entity.Data.ApiDbContext"__id*E*C
-Repository.UserRepository"$
-_contextEntity.Data.ApiDbContextÉÆ
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs( ((	
-%9int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()* 
-
-%8Entity.Data.ApiDbContext2SaveChanges()©
-¦
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs* *(
-%10NLog.Logger"__id*7*5
-Repository.UserRepository"
-_loggerNLog.Logger€
-ý
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs* *(?
-%11void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%10NLog.Logger*&$
-"Successfully uploaded the {@users}*-
-+
-users"System.Collections.Generic.List<T>"[
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs+ +(
-""*À
-1Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs, ,("h
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs, ,(
-implicit return:+
-users"System.Collections.Generic.List<T>B
-Repository.UserRepository

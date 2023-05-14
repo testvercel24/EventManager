@@ -1,23 +1,0 @@
-
-7Entity.Data.LoggerManager.LogError(NLog.Logger, string)Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\LoggerManager.cs ("0*‰
-0Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\LoggerManager.cs («
-¨
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\LoggerManager.cs (
-
-%0void"NLog.Logger.Error(string)*
-
-loggerNLog.Logger*
-
-messagestring*
-1*À
-1Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\LoggerManager.cs ("h
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\LoggerManager.cs (
-implicit return:
-loggerNLog.Logger:
-messagestringB"
-Entity.Data.LoggerManager

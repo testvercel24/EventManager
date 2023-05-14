@@ -1,2 +1,0 @@
-﻿C:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs
-C:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs

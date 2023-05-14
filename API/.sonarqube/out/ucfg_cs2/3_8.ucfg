@@ -1,129 +1,0 @@
-
-*Services.UserService.GetEventsForUser(int)L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csb b(,"0*Ñ	
-0L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csd g(ž
-›
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csd d(
-%0NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.LoggerÎ
-Ë
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csd d(M
-
-%1void"NLog.Logger.Info(string, int)*
-
-%0NLog.Logger*31
-/Getting all the events for the user with Id {0}*
-""Ä
-Á
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csf f(, 
-%2Repository.IUserRepository"__id*I*G
-Services.UserService"-
-_userRepositoryRepository.IUserRepositoryÛØ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csf f(@
-%3Entity.Models.UserModel"+Repository.IUserRepository.GetUserById(int)*"
- 
-%2Repository.IUserRepository*
-""2GetUserById(int)ž
-›
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csf f(@$
-	userModelEntity.Models.UserModel"__id*
-
-%3Entity.Models.UserModel½
-º
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csg
- g(
-
-%4bool""object.operator ==(object, object)*
-"
-object*&
-$
-	userModelEntity.Models.UserModel*
-""*
-1
-2*Â
-1L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csi j(Dž
-›
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csi i(
-%5NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.LoggerÃ
-À
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csi i(D
-
-%6void"NLog.Logger.Error(string, int)*
-
-%5NLog.Logger*'%
-#No user details is found for Id {0}*
-""‘Ž
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csj j(E!
-%7Entity.Data.CustomException"Entity.Data.CustomExceptionî
-ë
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csj j(!
-
-%8void"@Entity.Data.CustomException.CustomException(int, string, string)*#
-!
-%7Entity.Data.CustomException*2”*
-	Not Found*
-User not found*
-3*ª
-
-2L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csm q(Ç
-Ä
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csm  m(0!
-%9Repository.IEventRepository"__id*K*I
-Services.UserService"/
-_eventRepositoryRepository.IEventRepositoryóð
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csm  m(I)
-%10"System.Collections.Generic.List<T>"1Repository.IEventRepository.GetEventsForUser(int)*#
-!
-%9Repository.IEventRepository*
-""2GetEventsForUser(int)²
-¯
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csm m(I,
-events"System.Collections.Generic.List<T>"__id*+
-)
-%10"System.Collections.Generic.List<T>Ÿ
-œ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cso o(
-%11NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger¿
-¼
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cso o(i
-%12void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
-
-%11NLog.Logger*GE
-CSuccessfully fetched all the event details {0} for user with Id {1}*.
-,
-events"System.Collections.Generic.List<T>*
-"""~
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csq q(.
-,
-events"System.Collections.Generic.List<T>*¶
-3L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csr r("c
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csr r(
-implicit return:
-userIdintB
-Services.UserService

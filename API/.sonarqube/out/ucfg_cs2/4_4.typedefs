@@ -1,7 +1,0 @@
- 
-API.Startupobject„
-:Startup(Microsoft.Extensions.Configuration.IConfiguration)FAPI.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)¬
-NConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)ZAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)ê
-mConfigure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)yAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)2
-Configuration.getAPI.Startup.Configuration.get2
-Configuration.setAPI.Startup.Configuration.set

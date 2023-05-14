@@ -1,63 +1,0 @@
-
-@Entity.Data.CustomException.CustomException(int, string, string)S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs ("1*Ñ
-1S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (²
-¯
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (-	
-%0int"$Entity.Data.CustomException.Code.set*
-Entity.Data.CustomException*
-""¹
-¶
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (9
-%1string"(Entity.Data.CustomException.Messages.set*
-Entity.Data.CustomException*
-""¼
-¹
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (<
-%2string"+Entity.Data.CustomException.Description.set*
-Entity.Data.CustomException*
-""B
-@
-
-%3void"System.Exception.Exception()*
-System.Exception*
-0*«
-0S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs
- (²
-¯
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs
- 
-(	
-%4int"$Entity.Data.CustomException.Code.set*
-Entity.Data.CustomException*
-""Æ
-Ã
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (
-%5string"(Entity.Data.CustomException.Messages.set*
-Entity.Data.CustomException*
-
-messagestringÍ
-Ê
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (
-%6string"+Entity.Data.CustomException.Description.set*
-Entity.Data.CustomException*
-
-descriptionstring*
-2*Ä
-2S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs ("j
-S
-IC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\CustomException.cs (
-implicit return:
-codeint:
-messagestring:
-descriptionstringB
-Entity.Data.CustomException

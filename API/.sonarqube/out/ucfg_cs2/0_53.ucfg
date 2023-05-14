@@ -1,18 +1,0 @@
-
-+Entity.Data.ApiDbContext.EventAttendees.setP
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs	C 	(F"0*ÿ
-0P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs	G 	(Gò
-ï
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs	C 	(G\
-Entity.Data.ApiDbContext">
-EventAttendees,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*7
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"²
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs	C 	(G^*\
-Entity.Data.ApiDbContext">
-EventAttendees,Microsoft.EntityFrameworkCore.DbSet<TEntity>:5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B
-Entity.Data.ApiDbContext

@@ -81,13 +81,9 @@ namespace API
               Message = baseException.Messages,
               Description = baseException.Description
             }.ToString());
-
-
-            // return;
           }
         });
       });
-      // MyAppHttpContext.Configure(httpContextAccessor);
       app.UseSwagger();
       app.UseSwaggerUI();
       app.UseHttpsRedirection();

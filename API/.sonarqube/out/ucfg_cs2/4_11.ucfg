@@ -1,80 +1,0 @@
-
-*Controller.UserController.GetUserById(int)V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csC C($"2*˜
-0V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csE K(­
-ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csE E(
-%0NLog.Logger"__id*7*5
-Controller.UserController"
-_loggerNLog.LoggerÈ
-Å
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csE E(=
-
-%1void"NLog.Logger.Info(string, int)*
-
-%0NLog.Logger*#!
-Getting user details for Id {0}*
-""Æ
-Ã
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csG G(!
-%2Services.IUserService"__id*F*D
-Controller.UserController"%
-_userServiceServices.IUserService×Ô
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csG G(5
-%3Entity.Dtos.UserDto"&Services.IUserService.GetUserById(int)*
-
-%2Services.IUserService*
-""2GetUserById(int)›
-˜
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csG G(5
-userEntity.Dtos.UserDto"__id*
-
-%3Entity.Dtos.UserDto­
-ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csI I(
-%4NLog.Logger"__id*7*5
-Controller.UserController"
-_loggerNLog.Logger§
-¤
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csI I(X
-
-%5void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
-
-%4NLog.Logger*86
-4Successfully fetched the user details {0} for Id {1}*
-
-userEntity.Dtos.UserDto*
-""˜•
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csK K(-
-%6'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-userEntity.Dtos.UserDto2Ok(object?)"‰
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csK K(/
--
-%6'Microsoft.AspNetCore.Mvc.OkObjectResult*Ê
-1V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csL L("m
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csL L(
-implicit return*Ø
-2V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csCN C(Nv
-t
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csC C($
-%7"__entrypoint*
-""*
-0:
-userIdintB
-Controller.UserController

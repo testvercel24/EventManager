@@ -1,82 +1,0 @@
-
-/Controller.UserController.GetAllUsers(int, int)V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs/ /($"2*Í
-0V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs1 7(­
-ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs1 1(
-%0NLog.Logger"__id*7*5
-Controller.UserController"
-_loggerNLog.LoggerÍ
-Ê
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs1 1(G
-
-%1void"NLog.Logger.Info(string)*
-
-%0NLog.Logger*53
-1Getting all the active users from user repositoryÆ
-Ã
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs3 3((
-%2Services.IUserService"__id*F*D
-Controller.UserController"%
-_userServiceServices.IUserServiceøõ
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs3 3(I(
-%3"System.Collections.Generic.List<T>"+Services.IUserService.GetAllUsers(int, int)*
-
-%2Services.IUserService*
-""*
-""2GetAllUsers(int, int)º
-·
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs3 3(I+
-users"System.Collections.Generic.List<T>"__id**
-(
-%3"System.Collections.Generic.List<T>­
-ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs5 5(
-%4NLog.Logger"__id*7*5
-Controller.UserController"
-_loggerNLog.Logger‡
-„
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs5 5(C
-
-%5void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%4NLog.Logger**(
-&Successfully fetched all the users {0}*-
-+
-users"System.Collections.Generic.List<T>¨¥
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs7 7(-
-%6'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*-
-+
-users"System.Collections.Generic.List<T>2Ok(object?)"‰
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs7 7(/
--
-%6'Microsoft.AspNetCore.Mvc.OkObjectResult*Ê
-1V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs8 8("m
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs8 8(
-implicit return*â
-2X
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs/Š /(Š~
-|
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs/ /($
-%7"__entrypoint*
-""*
-""*
-0:
-
-startIndexint:
-rowSizeintB
-Controller.UserController

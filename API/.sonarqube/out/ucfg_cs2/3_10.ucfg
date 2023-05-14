@@ -1,214 +1,0 @@
-
-DServices.UserService.UploadUser(Microsoft.AspNetCore.Http.IFormFile)L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs   ("0*Å
-0L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs" "(Kû
-õ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs" "(
-%0NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Loggerá
-Ñ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs" "(L
-
-%1void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%0NLog.Logger*42
-0Started uploading userIds and userNames from {0}*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile*
-1*”	
-1L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs% '(Bû
-õ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs% %(
-%2NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Loggerˇ
-¸
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs% %(F
-
-%3void"/NLog.Logger.Debug<TArgument>(string, TArgument)*
-
-%2NLog.Logger*+)
-'Assigning file {0} details to UserModel*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile‡›
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs'- '(B
-%4System.IO.Stream"4Microsoft.AspNetCore.Http.IFormFile.OpenReadStream()*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile2OpenReadStream()áÑ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs' '(C
-%5System.IO.StreamReader"System.IO.StreamReaderŒ
-À
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs'  '(,
-
-%6void"5System.IO.StreamReader.StreamReader(System.IO.Stream)*
-
-%5System.IO.StreamReader*
-
-%4System.IO.Streamô
-ñ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs' '(C 
-readerSystem.IO.StreamReader"__id*
-
-%5System.IO.StreamReader*
-2*ı
-2L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs( ((K÷
-”
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs(/ ((K&
-%7 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*$""
- System.Globalization.CultureInfoÄ~
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs( ((L
-%8CsvHelper.CsvReader"CsvHelper.CsvReader≠
-™
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs( ((&
-
-%9void"[CsvHelper.CsvReader.CsvReader(System.IO.TextReader, System.Globalization.CultureInfo, bool)*
-
-%8CsvHelper.CsvReader*"
- 
-readerSystem.IO.StreamReader*(
-&
-%7 System.Globalization.CultureInfo*
-""ê
-ç
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs( ((L
-csvCsvHelper.CsvReader"__id*
-
-%8CsvHelper.CsvReader*
-3*º
-3L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs* .(◊‘
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs* *(10
-%10)System.Collections.Generic.IEnumerable<T>"#CsvHelper.CsvReader.GetRecords<T>()*
-
-csvCsvHelper.CsvReader2GetRecords<T>()•
-¢
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs* *(:)
-%11"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*2
-0
-%10)System.Collections.Generic.IEnumerable<T>±
-Æ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs* *(:+
-users"System.Collections.Generic.List<T>"__id*+
-)
-%11"System.Collections.Generic.List<T>ü
-ú
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs+
- +(
-%12NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger¯
-ı
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs+
- +(@
-%13void"/NLog.Logger.Debug<TArgument>(string, TArgument)*
-
-%12NLog.Logger*" 
-Uploding UserModel details {0}*-
-+
-users"System.Collections.Generic.List<T>≈
-¬
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs, ,('!
-%14Repository.IUserRepository"__id*I*G
-Services.UserService"-
-_userRepositoryRepository.IUserRepositoryŸ÷
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs, ,(9
-%15bool"_Repository.IUserRepository.UploadUser(System.Collections.Generic.List<Entity.Models.UserModel>)*#
-!
-%14Repository.IUserRepository*-
-+
-users"System.Collections.Generic.List<T>2DUploadUser(System.Collections.Generic.List<Entity.Models.UserModel>)u
-s
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs, ,(9
-uploadbool"__id*
-
-%15boolü
-ú
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs-
- -(
-%16NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.LoggerÄ
-˝
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs-
- -(H
-%17void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%16NLog.Logger*+)
-'Successfully uploaded details users {0}*-
-+
-users"System.Collections.Generic.List<T>"V
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs.
- .(
-""*V
-4L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs6 6(*
-5*V
-5L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs6 6(*
-6*Y
-6L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs6 6(*
-7
-8*ø
-7L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs3 4(Oü
-ú
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs3 3(
-%18NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger±
-Æ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs3 3(5
-%19void"NLog.Logger.Error(string)*
-
-%18NLog.Logger* 
-Invalid csv file bad requestíè
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs4 4(P"
-%20Entity.Data.CustomException"Entity.Data.CustomException˚
-¯
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs4 4(!
-%21void"@Entity.Data.CustomException.CustomException(int, string, string)*$
-"
-%20Entity.Data.CustomException*2ê*
-Bad request*
-Invalid Csv file format*
-8*∂
-8L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs6 6("c
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs6 6(
-implicit return:+
-file#Microsoft.AspNetCore.Http.IFormFileB
-Services.UserService

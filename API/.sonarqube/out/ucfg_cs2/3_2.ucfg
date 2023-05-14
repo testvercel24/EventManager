@@ -1,47 +1,0 @@
-
-†Services.EventService.EventService(Repository.IEventRepository, Services.IUserService, Repository.IUserRepository, AutoMapper.IMapper)M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs ("1*W
-1M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs (*
-0*ÿ
-0M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs (&Ö
-Ó
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs ((J
-Services.EventService"/
-_eventRepositoryRepository.IEventRepository"__id*0
-.
-eventRepositoryRepository.IEventRepositoryÂ
-¿
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs ( @
-Services.EventService"%
-_userServiceServices.IUserService"__id*&
-$
-userServiceServices.IUserService²
-¯
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs (8
-Services.EventService"
-_mapperAutoMapper.IMapper"__id*
-
-mapperAutoMapper.IMapperÒ
-Ï
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs (&H
-Services.EventService"-
-_userRepositoryRepository.IUserRepository"__id*.
-,
-userRepositoryRepository.IUserRepository*
-2*¸
-2M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs ("d
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs (
-implicit return:.
-eventRepositoryRepository.IEventRepository:$
-userServiceServices.IUserService:,
-userRepositoryRepository.IUserRepository:
-mapperAutoMapper.IMapperB
-Services.EventService

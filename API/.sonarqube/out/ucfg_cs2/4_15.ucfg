@@ -1,153 +1,0 @@
-
-6Controller.EventController.GetEvents(string, int, int)W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs7 7(""2*¶
-0W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs9 ?(Ø
-¨
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs9 9(
-%0NLog.Logger"__id*8*6
-Controller.EventController"
-_loggerNLog.Logger›
-⁄
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs9 9(B
-
-%1void" NLog.Logger.Info(string, string)*
-
-%0NLog.Logger*&$
-"Getting list of events for {0} key*
-
-eventKeystringÀ
-»
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs;% ;(2
-%2Services.IEventService"__id*I*G
-Controller.EventController"'
-_eventServiceServices.IEventServiceùö
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs;% ;([(
-%3"System.Collections.Generic.List<T>"2Services.IEventService.GetEvents(string, int, int)*
-
-%2Services.IEventService*
-
-eventKeystring*
-""*
-""2GetEvents(string, int, int)¡
-æ
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs; ;([1
-eventIdDtos"System.Collections.Generic.List<T>"__id**
-(
-%3"System.Collections.Generic.List<T>Ø
-¨
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs= =(
-%4NLog.Logger"__id*8*6
-Controller.EventController"
-_loggerNLog.Loggerí
-è
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs= =(M
-
-%5void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%4NLog.Logger*.,
-*Successfully fetched the list of event {0}*3
-1
-eventIdDtos"System.Collections.Generic.List<T>Ø¨
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs? ?(-
-%6'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*3
-1
-eventIdDtos"System.Collections.Generic.List<T>2Ok(object?)"ä
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs? ?(/
--
-%6'Microsoft.AspNetCore.Mvc.OkObjectResult*Ã
-1W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs@ @("n
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs@ @(
-implicit return*ö
-2Y
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs7√ 7(√ñ
-ì
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs7 7("
-%7"__entrypoint*
-
-eventKeystring*
-""*
-"" 
-«
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs7$ 7(A
-%8"
-__annotate*DB
-@Microsoft.AspNetCore.Mvc.FromRouteAttribute.FromRouteAttribute()*
-
-eventKeystring’
-“
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs7C 7(K
-%9"
-__annotate*OM
-KSystem.ComponentModel.DataAnnotations.RequiredAttribute.RequiredAttribute()*
-
-eventKeystringÕ
- 
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs. .(
-%10"
-__annotate*FD
-BMicrosoft.AspNetCore.Mvc.HttpGetAttribute.HttpGetAttribute(string)*
-
-eventKeystring˘
-ˆ
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs4 4(J
-%11"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*
-
-eventKeystring˘
-ˆ
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs5 5(A
-%12"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*
-
-eventKeystring˘
-ˆ
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs6 6(2
-%13"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*
-
-eventKeystring≤
-Ø
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs7# 7(\
-eventKeystring"__annotation*
-
-%8*
-
-%9*
-
-%10*
-
-%11*
-
-%12*
-
-%13*
-0:
-eventKeystring:
-
-startIndexint:
-rowSizeintB
-Controller.EventController

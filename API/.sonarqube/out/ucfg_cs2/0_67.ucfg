@@ -1,40 +1,0 @@
-
-oEntity.Data.ApiDbContext.ApiDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Entity.Data.ApiDbContext>)P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs ("1*‘
-1P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs (ÞÛ
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs (C2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>""Entity.Data.ApiDbContext.Users.set*
-Entity.Data.ApiDbContext*
-""2	Users.setàÝ
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs (E2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"#Entity.Data.ApiDbContext.Events.set*
-Entity.Data.ApiDbContext*
-""2
-Events.setðí
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs	 	(U2
-%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>"+Entity.Data.ApiDbContext.EventAttendees.set*
-Entity.Data.ApiDbContext*
-""2EventAttendees.set*
-0*•
-0P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs@ (N¸
-µ
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs@ (O
-
-%3void"aMicrosoft.EntityFrameworkCore.DbContext.DbContext(Microsoft.EntityFrameworkCore.DbContextOptions)*+)
-'Microsoft.EntityFrameworkCore.DbContext*E
-C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>*
-2*¾
-2P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs ("g
-P
-FC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Data\ApiDbContext.cs (
-implicit return:C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>B
-Entity.Data.ApiDbContext

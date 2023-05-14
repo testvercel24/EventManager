@@ -1,69 +1,0 @@
-
-lEntity.Migrations.Serializedtableandcolumnname.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs  (""0*è 
-0y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs O(!òï
-y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs (_
-%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-
-Events*
-""*
-""*
-""*
-""2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)óî
-y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs *(_
-%1YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*	
-Users*
-""*
-""*
-""*
-""2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)†ù
-y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.cs, E(_
-%2YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-EventAttendees*
-""*
-""*
-""*
-""2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)ÿ’
-y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csG J(#_
-%3YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"~Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string?, bool, string?, bool[]?)*O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-IX_EventAttendees_event_id*
-EventAttendees*
-
-event_id*
-""*
-""*
-""*
-""2DCreateIndex(string, string, string, string?, bool, string?, bool[]?)÷”
-y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csL O("_
-%4YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"~Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string?, bool, string?, bool[]?)*O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-IX_EventAttendees_user_id*
-EventAttendees*	
-user_id*
-""*
-""*
-""*
-""2DCreateIndex(string, string, string, string?, bool, string?, bool[]?)*
-1*ë
-1y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csP	 P(	"ê
-y
-oC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Migrations\20230511130825_Serialized table and column name.csP P(	
-implicit return:M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB20
-.Entity.Migrations.Serializedtableandcolumnname

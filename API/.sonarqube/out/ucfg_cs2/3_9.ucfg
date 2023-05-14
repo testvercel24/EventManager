@@ -1,144 +1,0 @@
-
-%Services.UserService.GetUserById(int)L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csJ J("0*≈	
-0L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csL O(û
-õ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csL L(
-%0NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger¬
-ø
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csL L(A
-
-%1void"NLog.Logger.Info(string, int)*
-
-%0NLog.Logger*'%
-#Getting user details for the Id {0}*
-""ƒ
-¡
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csN N(, 
-%2Repository.IUserRepository"__id*I*G
-Services.UserService"-
-_userRepositoryRepository.IUserRepository€ÿ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csN N(@
-%3Entity.Models.UserModel"+Repository.IUserRepository.GetUserById(int)*"
- 
-%2Repository.IUserRepository*
-""2GetUserById(int)û
-õ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csN N(@$
-	userModelEntity.Models.UserModel"__id*
-
-%3Entity.Models.UserModelΩ
-∫
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csO
- O(
-
-%4bool""object.operator ==(object, object)*
-"
-object*&
-$
-	userModelEntity.Models.UserModel*
-""*
-1
-2*¬
-1L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csQ R(Dû
-õ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csQ Q(
-%5NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger√
-¿
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csQ Q(D
-
-%6void"NLog.Logger.Error(string, int)*
-
-%5NLog.Logger*'%
-#No user details is found for Id {0}*
-""ëé
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csR R(E!
-%7Entity.Data.CustomException"Entity.Data.CustomExceptionÓ
-Î
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csR R(!
-
-%8void"@Entity.Data.CustomException.CustomException(int, string, string)*#
-!
-%7Entity.Data.CustomException*2î*
-	Not Found*
-User not found*
-3*Ï
-2L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csT Z(û
-õ
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csT T(
-%9NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger¸
-˘
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csT T(L
-%10void"/NLog.Logger.Debug<TArgument>(string, TArgument)*
-
-%9NLog.Logger*.,
-*Mapping user model details {0} to user dto*&
-$
-	userModelEntity.Models.UserModel≠
-™
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csV V(
-%11AutoMapper.IMapper"__id*9*7
-Services.UserService"
-_mapperAutoMapper.IMapperˇ¸
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csV V(4
-%12Entity.Dtos.UserDto"0AutoMapper.IMapperBase.Map<TDestination>(object)*
-
-%11AutoMapper.IMapper*&
-$
-	userModelEntity.Models.UserModel2Map<TDestination>(object)í
-è
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csV V(4
-userEntity.Dtos.UserDto"__id*
-
-%12Entity.Dtos.UserDtoü
-ú
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csX X(
-%13NLog.Logger"__id*2*0
-Services.UserService"
-_loggerNLog.Logger†
-ù
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csX X(Y
-%14void"HNLog.Logger.Info<TArgument1, TArgument2>(string, TArgument1, TArgument2)*
-
-%13NLog.Logger*97
-5Successfully fetched user details {0} for user id {1}*
-
-userEntity.Dtos.UserDto*
-"""m
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.csZ Z(
-
-userEntity.Dtos.UserDto*∂
-3L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs[ [("c
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Services\UserService.cs[ [(
-implicit return:
-userIdintB
-Services.UserService

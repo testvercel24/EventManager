@@ -1,4 +1,0 @@
-﻿C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\IEventRepository.cs
-C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\IEventService.cs
-C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\IUserRepository.cs
-C:\Users\VishnuPadiga\Desktop\EventManager\Contracts\IUserService.cs

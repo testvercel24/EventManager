@@ -1,58 +1,0 @@
-
-/Repository.UserRepository.GetAllUsers(int, int)Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs4 4(&"0*û
-0Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 7(Ã
-À
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 6(&
-%0Entity.Data.ApiDbContext"__id*E*C
-Repository.UserRepository"$
-_contextEntity.Data.ApiDbContextÛØ
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 6(,2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>""Entity.Data.ApiDbContext.Users.get* 
-
-%0Entity.Data.ApiDbContext2	Users.get›
-˜
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 6(=
-%2System.Linq.IQueryable<T>"ISystem.Linq.Queryable.Skip<TSource>(System.Linq.IQueryable<TSource>, int)*"
-System.Linq.Queryable*4
-2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-""ˆ
-…
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 6(K
-%3System.Linq.IQueryable<T>"ISystem.Linq.Queryable.Take<TSource>(System.Linq.IQueryable<TSource>, int)*"
-System.Linq.Queryable*!
-
-%2System.Linq.IQueryable<T>*
-""˜
-•
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 6(T(
-%4"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*!
-
-%3System.Linq.IQueryable<T>µ
-²
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs6 6(T+
-users"System.Collections.Generic.List<T>"__id**
-(
-%4"System.Collections.Generic.List<T>"‚
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs7 7(-
-+
-users"System.Collections.Generic.List<T>*À
-1Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs8 8("h
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs8 8(
-implicit return:
-
-startIndexint:
-rowSizeintB
-Repository.UserRepository

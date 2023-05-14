@@ -1,72 +1,0 @@
-
-*Repository.UserRepository.GetUserById(int)Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.cs? ?(!"0*œ
-0Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csA D(¨
-¥
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csA A(
-%0NLog.Logger"__id*7*5
-Repository.UserRepository"
-_loggerNLog.LoggerË
-È
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csA A(E
-
-%1void"NLog.Logger.Info(string, int)*
-
-%0NLog.Logger*+)
-'Getting user repository details for {0}*
-""Ã
-À
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csB B( 
-%2Entity.Data.ApiDbContext"__id*E*C
-Repository.UserRepository"$
-_contextEntity.Data.ApiDbContextÛØ
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csB B(&2
-%3,Microsoft.EntityFrameworkCore.DbSet<TEntity>""Entity.Data.ApiDbContext.Users.get* 
-
-%2Entity.Data.ApiDbContext2	Users.getß
-Ü
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csB B(N
-%4Entity.Models.UserModel"ŽSystem.Linq.Queryable.FirstOrDefault<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
-System.Linq.Queryable*4
-2
-%3,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-""ž
-›
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csB B(N
-userEntity.Models.UserModel"__id*
-
-%4Entity.Models.UserModel¨
-¥
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csC C(
-%5NLog.Logger"__id*7*5
-Repository.UserRepository"
-_loggerNLog.Logger€
-ý
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csC C(L
-
-%6void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%5NLog.Logger*42
-0Successfully fetched user repository details {0}*!
-
-userEntity.Models.UserModel"v
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csD D(!
-
-userEntity.Models.UserModel*À
-1Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csE E("h
-Q
-GC:\Users\VishnuPadiga\Desktop\EventManager\Repository\UserRepository.csE E(
-implicit return:
-userIdintB
-Repository.UserRepository

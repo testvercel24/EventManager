@@ -1,288 +1,0 @@
-
-7Services.EventService.CreateEvent(Entity.Dtos.EventDto)M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs% %("0*“
-0M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs' ((8†
-ù
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs' '(
-%0NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.Logger˝
-˙
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs' '(P
-
-%1void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%0NLog.Logger*42
-0Started creating an event with event details {0}*"
- 
-eventDtoEntity.Dtos.EventDtoµ
-≤
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs(
- (( 
-%2System.DateTime"&Entity.Dtos.EventDto.StartDateTime.get*"
- 
-eventDtoEntity.Dtos.EventDto≥
-∞
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs($ ((8
-%3System.DateTime"$Entity.Dtos.EventDto.EndDateTime.get*"
- 
-eventDtoEntity.Dtos.EventDto‰
-·
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs(
- ((8
-
-%4bool"=System.DateTime.operator >=(System.DateTime, System.DateTime)*"
-System.DateTime*
-
-%2System.DateTime*
-
-%3System.DateTime*
-1
-2*Ô
-1M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs* +(b†
-ù
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs* *(
-%5NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.LoggerÕ
- 
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs* *(R
-
-%6void"NLog.Logger.Error(string)*
-
-%5NLog.Logger*=;
-9Bad request where event start time is beyond the end timeíè
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs+ +(c!
-%7Entity.Data.CustomException"Entity.Data.CustomExceptionç
-ä
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs+ +(!
-
-%8void"@Entity.Data.CustomException.CustomException(int, string, string)*#
-!
-%7Entity.Data.CustomException*2ê*
-Bad Request*.,
-*Event start time should be before end time*
-3*ï
-2M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs- -(4ó
-î
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs- -(
-%9System.DateTime"System.DateTime.Now.get*"
-System.DateTime∂
-≥
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs- -(4
-%10System.DateTime"&Entity.Dtos.EventDto.StartDateTime.get*"
- 
-eventDtoEntity.Dtos.EventDtoÂ
-‚
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs- -(4
-%11bool"<System.DateTime.operator >(System.DateTime, System.DateTime)*"
-System.DateTime*
-
-%9System.DateTime*
-
-%10System.DateTime*
-4
-5*Î
-4M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs/ 0(W°
-û
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs/ /(
-%12NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.Logger–
-Õ
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs/ /(S
-%13void"NLog.Logger.Error(string)*
-
-%12NLog.Logger*><
-:Bad Request where start data time should be upcoming eventìê
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs0 0(X"
-%14Entity.Data.CustomException"Entity.Data.CustomExceptionÑ
-Å
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs0 0(!
-%15void"@Entity.Data.CustomException.CustomException(int, string, string)*$
-"
-%14Entity.Data.CustomException*2ê*
-Bad Request*#!
-Event cannot be started in past*
-3*⁄
-5M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs2 6(°
-û
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs2 2(
-%16NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.LoggerÙ
-Ò
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs2 2(E
-%17void"/NLog.Logger.Debug<TArgument>(string, TArgument)*
-
-%16NLog.Logger*(&
-$Mapping event dto {0} to event model*"
- 
-eventDtoEntity.Dtos.EventDtoØ
-¨
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs3 3(%
-%18AutoMapper.IMapper"__id*:*8
-Services.EventService"
-_mapperAutoMapper.IMapperÅ˛
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs3 3(?
-%19Entity.Models.EventModel"0AutoMapper.IMapperBase.Map<TDestination>(object)*
-
-%18AutoMapper.IMapper*"
- 
-eventDtoEntity.Dtos.EventDto2Map<TDestination>(object)£
-†
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs3 3(?&
-
-eventModelEntity.Models.EventModel"__id*!
-
-%19Entity.Models.EventModel°
-û
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs4 4(
-%20NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.Logger˚
-¯
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs4 4(H
-%21void"/NLog.Logger.Debug<TArgument>(string, TArgument)*
-
-%20NLog.Logger*)'
-%Uploading the {0} details to database*(
-&
-
-eventModelEntity.Models.EventModel 
-«
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs5 5(*"
-%22Repository.IEventRepository"__id*L*J
-Services.EventService"/
-_eventRepositoryRepository.IEventRepositoryôñ
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs5 5(B
-%23bool"ARepository.IEventRepository.CreateEvent(Entity.Models.EventModel)*$
-"
-%22Repository.IEventRepository*(
-&
-
-eventModelEntity.Models.EventModel2%CreateEvent(Entity.Models.EventModel)|
-z
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs5 5(B
-createdEventbool"__id*
-
-%23bool*
-6
-7*„
-6M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs8 9(V°
-û
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs8 8(
-%24NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.Logger…
-∆
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs8 8(L
-%25void"NLog.Logger.Error(string)*
-
-%24NLog.Logger*75
-3Internal server error event not creted successfullyìê
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs9 9(W"
-%26Entity.Data.CustomException"Entity.Data.CustomExceptionÉ
-Ä
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs9 9(!
-%27void"@Entity.Data.CustomException.CustomException(int, string, string)*$
-"
-%26Entity.Data.CustomException*2Ù*
-Internal Server Error*
-Something went wrong*
-3*Å
-7M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs; >(°
-û
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs; ;(
-%28NLog.Logger"__id*3*1
-Services.EventService"
-_loggerNLog.Logger∞
-≠
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs;= ;(J
-%29System.Guid"Entity.Models.BaseModel.Id.get*(
-&
-
-eventModelEntity.Models.EventModelÁ
-‰
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs; ;(K
-%30void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%28NLog.Logger**(
-&Event created successfully with id {0}*
-
-%29System.Guid~|
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs< ?(
-%31Entity.Dtos.IdDto"Entity.Dtos.IdDtoñ
-ì
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs< <(
-%32void"Entity.Dtos.IdDto.IdDto()*
-
-%31Entity.Dtos.IdDto∞
-≠
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs> >(
-%33System.Guid"Entity.Models.BaseModel.Id.get*(
-&
-
-eventModelEntity.Models.EventModel≤
-Ø
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs> >(
-%34System.Guid"Entity.Dtos.IdDto.Id.set*
-
-%31Entity.Dtos.IdDto*
-
-%33System.Guid"k
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs< ?(
-
-%31Entity.Dtos.IdDto*∏
-3M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs@ @("d
-M
-CC:\Users\VishnuPadiga\Desktop\EventManager\Services\EventService.cs@ @(
-implicit return: 
-eventDtoEntity.Dtos.EventDtoB
-Services.EventService

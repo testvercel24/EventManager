@@ -1,22 +1,0 @@
-
-Entity.Dtos.ErrorDto.ToString()L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (#"0*¾
-0L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (*Š
-‡
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (+
-%0string"bSystem.Text.Json.JsonSerializer.Serialize<TValue>(TValue, System.Text.Json.JsonSerializerOptions?)*#"!
-System.Text.Json.JsonSerializer*
-Entity.Dtos.ErrorDto*
-"""^
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (,
-
-%0string*¶
-1L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs ("c
-L
-BC:\Users\VishnuPadiga\Desktop\EventManager\Entity\Dtos\ErrorDto.cs (
-implicit returnB
-Entity.Dtos.ErrorDto

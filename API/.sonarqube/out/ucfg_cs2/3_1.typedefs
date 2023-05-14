@@ -1,7 +1,0 @@
-¨
-Services.UserServiceobjectÉ
-XUserService(Repository.IUserRepository, Repository.IEventRepository, AutoMapper.IMapper)mServices.UserService.UserService(Repository.IUserRepository, Repository.IEventRepository, AutoMapper.IMapper)w
-/UploadUser(Microsoft.AspNetCore.Http.IFormFile)DServices.UserService.UploadUser(Microsoft.AspNetCore.Http.IFormFile)C
-GetAllUsers(int, int)*Services.UserService.GetAllUsers(int, int)9
-GetUserById(int)%Services.UserService.GetUserById(int)C
-GetEventsForUser(int)*Services.UserService.GetEventsForUser(int)

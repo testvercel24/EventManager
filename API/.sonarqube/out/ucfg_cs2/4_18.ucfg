@@ -1,193 +1,0 @@
-
-<Controller.EventController.CreateEvent(Entity.Dtos.EventDto)W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs ($"4*á
-0W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs
- (ƒ
-€
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (@
-%0:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary"6Microsoft.AspNetCore.Mvc.ControllerBase.ModelState.get*+)
-'Microsoft.AspNetCore.Mvc.ControllerBaseô
-ñ
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (
-
-%1bool"FMicrosoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary.IsValid.get*B
-@
-%0:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary*
-1
-2*õ
-1W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs! "(K¯
-¬
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs! !(
-%2NLog.Logger"__id*8*6
-Controller.EventController"
-_loggerNLog.Logger½
-º
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs! !(8
-
-%3void"NLog.Logger.Error(string)*
-
-%2NLog.Logger*#!
-Bad request invalid model stateœ™
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs" "(L!
-%4Entity.Data.CustomException"Entity.Data.CustomException€
-ý
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs" "(!
-
-%5void"@Entity.Data.CustomException.CustomException(int, string, string)*#
-!
-%4Entity.Data.CustomException*2*
-Bad Request*
-Invalid data format*
-3*²
-2W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs$ *(¯
-¬
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs$ $(
-%6NLog.Logger"__id*8*6
-Controller.EventController"
-_loggerNLog.Logger²
-¯
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs$D $(V
-%7string""Entity.Dtos.EventDto.EventName.get*"
- 
-eventDtoEntity.Dtos.EventDtoâ
-ß
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs$ $(W
-
-%8void" NLog.Logger.Info(string, string)*
-
-%6NLog.Logger*1/
--Started creating an event with event name {0}*
-
-%7stringË
-È
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs& &(#
-%9Services.IEventService"__id*I*G
-Controller.EventController"'
-_eventServiceServices.IEventService—”
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs& &(9
-%10Entity.Dtos.IdDto"8Services.IEventService.CreateEvent(Entity.Dtos.EventDto)*
-
-%9Services.IEventService*"
- 
-eventDtoEntity.Dtos.EventDto2!CreateEvent(Entity.Dtos.EventDto)œ
-™
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs& &(9
-eventIdEntity.Dtos.IdDto"__id*
-
-%10Entity.Dtos.IdDto°
-­
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs( ((
-%11NLog.Logger"__id*8*6
-Controller.EventController"
-_loggerNLog.Loggerª
-§
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs(@ ((J
-%12System.Guid"Entity.Dtos.IdDto.Id.get*
-
-eventIdEntity.Dtos.IdDtoô
-ñ
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs( ((K
-%13void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%11NLog.Logger*-+
-)Successfully created an event with Id {0}*
-
-%12System.Guid›˜
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs* *(.
-%14'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-eventIdEntity.Dtos.IdDto2Ok(object?)"‹
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs* *(0
-.
-%14'Microsoft.AspNetCore.Mvc.OkObjectResult*Ì
-3W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs+ +("n
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs+ +(
-implicit return*‡
-4W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.csB (B•
-’
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs ($
-%15"__entrypoint*"
- 
-eventDtoEntity.Dtos.EventDto×
-Ô
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs& (.
-%16"
-__annotate*B@
->Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*"
- 
-eventDtoEntity.Dtos.EventDto×
-Ô
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (
-%17"
-__annotate*B@
->Microsoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute()*"
- 
-eventDtoEntity.Dtos.EventDto‡
-„
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (?
-%18"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*"
- 
-eventDtoEntity.Dtos.EventDto‡
-„
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (A
-%19"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*"
- 
-eventDtoEntity.Dtos.EventDto‡
-„
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs (2
-%20"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*"
- 
-eventDtoEntity.Dtos.EventDto¹
-¶
-W
-MC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\EventController.cs% (A 
-eventDtoEntity.Dtos.EventDto"__annotation*
-
-%16*
-
-%17*
-
-%18*
-
-%19*
-
-%20*
-0: 
-eventDtoEntity.Dtos.EventDtoB
-Controller.EventController

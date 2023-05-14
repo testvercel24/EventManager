@@ -1,33 +1,0 @@
-
-API.Program.Main(string[])C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs ("0*ª
-0C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (Ç
-Ä
-C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (/
-%0)Microsoft.Extensions.Hosting.IHostBuilder"'API.Program.CreateHostBuilder(string[])*"
-API.Program*
-
-argsstring[]áÞ
-C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (%(
-%1"Microsoft.Extensions.Hosting.IHost"1Microsoft.Extensions.Hosting.IHostBuilder.Build()*1
-/
-%0)Microsoft.Extensions.Hosting.IHostBuilder2Build()¬
-©
-C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs (+
-
-%2void"fMicrosoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(Microsoft.Extensions.Hosting.IHost)*B"@
->Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions**
-(
-%1"Microsoft.Extensions.Hosting.IHost*
-1*¤
-1C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs	 	("Z
-C
-9C:\Users\VishnuPadiga\Desktop\EventManager\API\Program.cs	 	(
-implicit return:
-argsstring[]B"
-API.Program

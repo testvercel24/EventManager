@@ -1,11 +1,0 @@
-¥
-Entity.Models.UserModelobject2
-UserModel()#Entity.Models.UserModel.UserModel()0
-
-UserId.get"Entity.Models.UserModel.UserId.get0
-
-UserId.set"Entity.Models.UserModel.UserId.set4
-UserName.get$Entity.Models.UserModel.UserName.get4
-UserName.set$Entity.Models.UserModel.UserName.set>
-eventAttendee.get)Entity.Models.UserModel.eventAttendee.get>
-eventAttendee.set)Entity.Models.UserModel.eventAttendee.set

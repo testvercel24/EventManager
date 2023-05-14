@@ -1,7 +1,0 @@
- 
-Repository.UserRepositoryobjectn
-(UserRepository(Entity.Data.ApiDbContext)BRepository.UserRepository.UserRepository(Entity.Data.ApiDbContext)¦
-DUploadUser(System.Collections.Generic.List<Entity.Models.UserModel>)^Repository.UserRepository.UploadUser(System.Collections.Generic.List<Entity.Models.UserModel>)H
-GetAllUsers(int, int)/Repository.UserRepository.GetAllUsers(int, int)>
-GetUserById(int)*Repository.UserRepository.GetUserById(int)X
-GetUsersForEvent(System.Guid)7Repository.UserRepository.GetUsersForEvent(System.Guid)

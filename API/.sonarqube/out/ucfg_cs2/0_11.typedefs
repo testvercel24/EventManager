@@ -1,13 +1,0 @@
-Š
- Entity.Models.EventAttendeeModelEntity.Models.BaseModelobjectM
-EventAttendeeModel()5Entity.Models.EventAttendeeModel.EventAttendeeModel()9
-
-UserId.get+Entity.Models.EventAttendeeModel.UserId.get9
-
-UserId.set+Entity.Models.EventAttendeeModel.UserId.set;
-EventId.get,Entity.Models.EventAttendeeModel.EventId.get;
-EventId.set,Entity.Models.EventAttendeeModel.EventId.setA
-eventModel.get/Entity.Models.EventAttendeeModel.eventModel.getA
-eventModel.set/Entity.Models.EventAttendeeModel.eventModel.set?
-userModel.get.Entity.Models.EventAttendeeModel.userModel.get?
-userModel.set.Entity.Models.EventAttendeeModel.userModel.set

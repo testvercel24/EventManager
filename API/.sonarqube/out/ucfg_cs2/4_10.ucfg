@@ -1,136 +1,0 @@
-
-IController.UserController.UploadUser(Microsoft.AspNetCore.Http.IFormFile)V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (#"2*«
-0V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs #(­
-ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (
-%0NLog.Logger"__id*7*5
-Controller.UserController"
-_loggerNLog.Loggerý
-ú
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (8
-
-%1void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%0NLog.Logger* 
-Started uploding {0} details*-
-+
-file#Microsoft.AspNetCore.Http.IFormFileÆ
-Ã
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs ( 
-%2Services.IUserService"__id*F*D
-Controller.UserController"%
-_userServiceServices.IUserService­ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (1
-
-%3bool"EServices.IUserService.UploadUser(Microsoft.AspNetCore.Http.IFormFile)*
-
-%2Services.IUserService*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile2/UploadUser(Microsoft.AspNetCore.Http.IFormFile)~
-|
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (1
-uploadbool"__id*
-
-
-%3bool­
-ª
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs! !(
-%4NLog.Logger"__id*7*5
-Controller.UserController"
-_loggerNLog.Logger†
-ƒ
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs! !(A
-
-%5void".NLog.Logger.Info<TArgument>(string, TArgument)*
-
-%4NLog.Logger*)'
-%Successfully uploaded the {0} details*-
-+
-file#Microsoft.AspNetCore.Http.IFormFileåâ
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs# #('
-%6!Microsoft.AspNetCore.Mvc.OkResult",Microsoft.AspNetCore.Mvc.ControllerBase.Ok()*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase2Ok()"ƒ
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs# #()
-'
-%6!Microsoft.AspNetCore.Mvc.OkResult*Ê
-1V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs$ $("m
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs$ $(
-implicit return*Ç
-2V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.csM (Mž
-›
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (#
-%7"__entrypoint*-
-+
-file#Microsoft.AspNetCore.Http.IFormFileà
-Ý
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs% (<
-%8"
-__annotate*B@
->Microsoft.AspNetCore.Mvc.FromFormAttribute.FromFormAttribute()*-
-+
-file#Microsoft.AspNetCore.Http.IFormFileà
-Ý
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (
-%9"
-__annotate*B@
->Microsoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute()*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile‘
-Ž
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (0
-%10"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile‘
-Ž
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (A
-%11"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
-+
-file#Microsoft.AspNetCore.Http.IFormFile‘
-Ž
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs (2
-%12"
-__annotate*rp
-nSwashbuckle.AspNetCore.Annotations.SwaggerResponseAttribute.SwaggerResponseAttribute(int, string, System.Type)*-
-+
-file#Microsoft.AspNetCore.Http.IFormFileÁ
-¾
-V
-LC:\Users\VishnuPadiga\Desktop\EventManager\API\Controllers\UserController.cs$ (L+
-file#Microsoft.AspNetCore.Http.IFormFile"__annotation*
-
-%8*
-
-%9*
-
-%10*
-
-%11*
-
-%12*
-0:+
-file#Microsoft.AspNetCore.Http.IFormFileB
-Controller.UserController
