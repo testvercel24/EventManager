@@ -2841,11 +2841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "c:\\Users\\VishnuPadiga\\EventManager\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\Contracts.csproj",
+      "projectPath": "c:\\Users\\VishnuPadiga\\EventManager\\Contracts\\Contracts.csproj",
       "packagesPath": "C:\\Users\\VishnuPadiga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Contracts\\obj\\",
+      "outputPath": "c:\\Users\\VishnuPadiga\\EventManager\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VishnuPadiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2860,8 +2860,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj"
+            "c:\\Users\\VishnuPadiga\\EventManager\\Entity\\Entity.csproj": {
+              "projectPath": "c:\\Users\\VishnuPadiga\\EventManager\\Entity\\Entity.csproj"
             }
           }
         }
@@ -2897,7 +2897,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }

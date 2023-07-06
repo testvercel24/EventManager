@@ -83,7 +83,7 @@ namespace Controller
     ///To get all the events for the user
     ///</summary>
     ///<param name=user-id>Id of the user to get all the event mapped with</param>
-    ///<result name=List<EventDto>>COntains list of event details like eventId, eventName,startDateTime,endDateTime</result>
+    ///<result name=List<EventDto>>Contains list of event details like eventId, eventName,startDateTime,endDateTime</result>
     [SwaggerResponse(200, "successfully fetched all the events", typeof(List<EventDto>))]
     [SwaggerResponse(500, "Internal Server Error")]
     public IActionResult GetEventsForUser([FromRoute(Name = "user-id")] int userId)

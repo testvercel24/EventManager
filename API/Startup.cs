@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using NLog;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
+using API.IpLayout;
 namespace API
 {
   [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -57,6 +58,7 @@ namespace API
       services.AddScoped<EventController>();
       services.AddScoped<IEventService, EventService>();
       services.AddScoped<IEventRepository, EventRepository>();
+      services.AddScoped<IpLayoutRenderer>();
     }
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor)
     {

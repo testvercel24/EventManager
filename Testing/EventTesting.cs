@@ -18,8 +18,8 @@ namespace Testing
       EventDto eventDto = new EventDto()
       {
         EventName = "Integration Session",
-        StartDateTime = new DateTime(2023, 05, 14, 11, 00, 00),
-        EndDateTime = new DateTime(2023, 05, 14, 11, 30, 00)
+        StartDateTime = new DateTime(2024, 05, 14, 11, 00, 00),
+        EndDateTime = new DateTime(2024, 05, 14, 11, 30, 00)
       };
       IActionResult result = _eventController2.CreateEvent(eventDto);
       var objectResult = (ObjectResult)result;
@@ -45,7 +45,6 @@ namespace Testing
     [InlineData("upcoming")]
     public void GetEvents(string key)
     {
-      // string key = "all";
       IActionResult result = _eventController.GetEvents(key);
       var okObjectResult = Assert.IsType<OkObjectResult>(result);
       var returnedEvents = Assert.IsAssignableFrom<List<EventIdDto>>(okObjectResult.Value);
@@ -63,8 +62,6 @@ namespace Testing
       // Create an IFormFile instance using the byte array
       IFormFile formFile = new FormFile(new MemoryStream(fileBytes), 0, fileBytes.Length, "file", "file.csv");
       var result = _eventController2.CreateAttendee(EventId, formFile);
-      // var statusCodeResult = Assert.IsType<OkResult>(result);
-      // Assert.Equal(200, statusCodeResult.StatusCode);
       var createdResult = (CreatedResult)result;
       Assert.Equal(201, createdResult.StatusCode);
       Assert.Equal("", createdResult.Value);

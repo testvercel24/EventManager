@@ -2823,11 +2823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj",
+      "projectUniqueName": "c:\\Users\\VishnuPadiga\\EventManager\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\Entity.csproj",
+      "projectPath": "c:\\Users\\VishnuPadiga\\EventManager\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\VishnuPadiga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Entity\\obj\\",
+      "outputPath": "c:\\Users\\VishnuPadiga\\EventManager\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VishnuPadiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2895,7 +2895,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }

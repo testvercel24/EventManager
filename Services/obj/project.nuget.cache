@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T4ZS6QN0OEqPBlXL33J28+m4OB8S3lHsXKLji6LTrJmu/dQsTLb9kVQGwxsv7jk+bl/KCXdWi/a9ppK2JNxpqw==",
+  "dgSpecHash": "Ua9PygjMrTkl1Ly2N5xs6IKWgptWFAF8Z1X0+fNdXw97prfeOMktwYkDBbRRMX2lrtFFOg39wG3eijz0JmR1Eg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj",
+  "projectFilePath": "c:\\Users\\VishnuPadiga\\EventManager\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\VishnuPadiga\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",

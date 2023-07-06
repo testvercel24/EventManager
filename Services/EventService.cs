@@ -15,6 +15,7 @@ namespace Services
     private readonly IUserService _userService;
     private readonly IUserRepository _userRepository;
     private readonly IMapper _mapper;
+
     private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
     public EventService(IEventRepository eventRepository, IUserService userService,

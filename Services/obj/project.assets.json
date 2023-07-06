@@ -9556,11 +9556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj",
+      "projectUniqueName": "c:\\Users\\VishnuPadiga\\EventManager\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\Services.csproj",
+      "projectPath": "c:\\Users\\VishnuPadiga\\EventManager\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\VishnuPadiga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Services\\obj\\",
+      "outputPath": "c:\\Users\\VishnuPadiga\\EventManager\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VishnuPadiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -9575,8 +9575,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\VishnuPadiga\\Desktop\\EventManager\\Repository\\Repository.csproj"
+            "c:\\Users\\VishnuPadiga\\EventManager\\Repository\\Repository.csproj": {
+              "projectPath": "c:\\Users\\VishnuPadiga\\EventManager\\Repository\\Repository.csproj"
             }
           }
         }
@@ -9624,7 +9624,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }
