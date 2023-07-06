@@ -1,4 +1,4 @@
 {
 	"framework": "dotnet",
-	"command": "dotnet run"
+	"buildCommand": "dotnet build"
 }
