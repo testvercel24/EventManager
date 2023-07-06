@@ -1,4 +1,4 @@
 {
-	"framework": "dotnet",
+	"framework": "Angular",
 	"buildCommand": "dotnet build"
 }
