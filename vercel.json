@@ -1,0 +1,4 @@
+{
+	"framework": "dotnet",
+	"command": "dotnet run"
+}
